@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: size(70);
+}
+
+#formacao:target {
+  scroll-margin-top: size(120);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +23,8 @@ body {
   font-family: $type-first;
   position: relative;
 }
+
+
 
 h1,
 h2,

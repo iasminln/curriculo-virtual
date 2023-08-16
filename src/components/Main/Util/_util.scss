@@ -10,7 +10,7 @@
     position: relative;
 
     @include mq(1100){
-      font-size: size(55);
+      font-size: size(50);
     }
 
     .dot{
@@ -31,7 +31,7 @@
     -webkit-text-stroke: .1px rgba($color: $color-two, $alpha: .6);
 
     @include mq(1100){
-      font-size: size(55);
+      font-size: size(50);
     }
 
   }

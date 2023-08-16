@@ -1,6 +1,6 @@
 import React from 'react';
-import ImageLogoNome from '../../assets/logo-nome.png'
-import ImageLogo from '../../assets/logo-imagem.png'
+import ImageLogoNome from '../../../assets/logo-nome.png'
+import ImageLogo from '../../../assets/logo-imagem.png'
 
 
 const Apresentacao = () => {

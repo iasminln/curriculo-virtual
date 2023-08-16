@@ -1,15 +1,15 @@
 import React from 'react';
 import Titulo from '../Util/Titulo';
-import IconLinkedin from '../../assets/icon-linkedin.png'
-import IconGithub from '../../assets/icon-github.png'
-import IconGmail from '../../assets/icon-gmail.png'
+import IconLinkedin from '../../../assets/icon-linkedin.png'
+import IconGithub from '../../../assets/icon-github.png'
+import IconGmail from '../../../assets/icon-gmail.png'
 
 
 const Contato = () => {
 
 
   return (
-    <section className='contato'>
+    <section className='contato' id='contato'>
       <div className='container'>
         <div className='content-titulo'> <Titulo>Contato</Titulo></div>
 

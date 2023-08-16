@@ -1,0 +1,31 @@
+.container-antigo {
+  display: flex;
+  background: $color-five;
+  justify-content: center;
+
+
+  &.header-antigo {
+    z-index: 2;
+    position: relative;
+  }
+
+
+  .content-antigo {
+    max-width: size(780);
+    width: 100%;
+    position: relative;
+  }
+
+  .body-antigo {
+    width: 100%;
+    background: url('../assets//body-layout-antigo.png') repeat-y $color-five;
+
+    .conteudo {
+      position: relative;
+      left: size(285);
+      margin-top: -270px;
+      max-width: size(375);
+      z-index: 3;
+    }
+  }
+}

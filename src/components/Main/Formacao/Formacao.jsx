@@ -6,7 +6,7 @@ const Formacao = () => {
 
 
   return (
-    <section className='formacao'>
+    <section className='formacao' id='formacao'>
       <div className='container'>
        <div className='content-text'><Titulo>Formação</Titulo></div> 
         <div className='content'>

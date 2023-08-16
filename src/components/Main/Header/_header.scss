@@ -1,4 +1,4 @@
-header {
+.header {
   background: $color-two;
   position: fixed;
   top: 0;
@@ -12,10 +12,15 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    .btn-menu{
+    .btn-menu {
       background: none;
       border: none;
-     
+      transition: .3s;
+
+      &.active {
+        transform: rotate(90deg);
+      }
+
     }
 
     .logo-name {
@@ -31,35 +36,44 @@ header {
 
     .navegacao {
 
-      &.nav-mobile{
+      &.nav-mobile {
         display: none;
         background: $color-four;
         border-radius: 6px;
-        padding: size(10) size(20);
+        padding: size(5) size(20);
         position: absolute;
         top: 55px;
         right: 20px;
         box-shadow: 0 1px 2px rgba($color: $color-one, $alpha: .3);
 
-        ul{
+        ul {
           flex-direction: column;
-          
+
 
           .nav-item {
             padding: size(10) 0;
             border-bottom: 1px solid rgba($color: $color-three, $alpha: .5);
 
-            &:last-child{
+            &:last-child {
               border: none;
+            }
+
+            a {
+              display: grid;
+              grid-template-columns: 35px 1fr;
+              align-items: center;
+
+
+
             }
           }
         }
       }
 
-      &.active{
+      &.active {
         display: block;
       }
-     
+
 
       ul {
         display: flex;

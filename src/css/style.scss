@@ -1,12 +1,16 @@
 @import "mixins";
 @import "vars";
 @import "reset";
-@import "../components/Header/header";
-@import "../components/Apresentacao/apresentacao";
-@import "../components/Util/util";
-@import "../components/Experiencia/experiencia";
-@import "../components/Formacao/formacao";
-@import "../components/Projetos/projetos";
+@import "../components/Main/Header/header";
+@import "../components/Main/Apresentacao/apresentacao";
+@import "../components/Main/Util/util";
+@import "../components/Main/Experiencia/experiencia";
+@import "../components/Main/Formacao/formacao";
+@import "../components/Main/Projetos/projetos";
 
-@import "../components/Contato/contato";
-@import "../components/Creditos/creditos"
+@import "../components/Main/Contato/contato";
+@import "../components/Main/Creditos/creditos";
+
+@import "../components/Antigo/EstruturaAntiga/estrutura-antiga";
+@import "../components/Antigo/antigo"
+
