@@ -1,0 +1,61 @@
+.contato {
+  background: rgba($color: $color-two, $alpha: .3);
+  position: relative;
+
+  .container {
+    @include container();
+    min-height: size(360);
+    padding-top: size(80);
+    padding-bottom: size(100);
+    display: flex;
+    align-items: center;
+
+
+    .content-titulo {
+      position: absolute;
+      top: size(-50);
+    }
+
+    .conteudo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      @include mq(760){
+        flex-direction: column;
+      }
+
+      .text {
+        font-size: size(32);
+        max-width: size(330);
+        text-align: center;
+
+        @include mq(1000){
+          font-size: size(20);
+          max-width: size(200);
+        }
+
+        @include mq(760){
+          max-width: none;
+          margin-bottom: size(40);
+        }
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          transition: .3s;
+
+          &:hover {
+            transform: scale(1.06);
+          }
+        }
+      }
+    }
+  }
+}

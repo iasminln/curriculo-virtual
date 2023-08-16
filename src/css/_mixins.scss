@@ -1,0 +1,15 @@
+@function size($size) {
+  @return calc($size/ 16)+rem;
+}
+
+@mixin mq($width, $type: max) {
+  @media (#{$type}-width: ($width + px)) {
+    @content;
+  }
+}
+
+@mixin container() {
+  max-width: size(1080);
+  padding: 0 size(20);
+  margin: 0 auto;
+}

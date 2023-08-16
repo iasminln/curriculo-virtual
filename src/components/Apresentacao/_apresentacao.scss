@@ -1,0 +1,25 @@
+.apresentacao {
+  background: $color-two;
+  box-shadow: 0 2px 4px rgba($color: #8A2020, $alpha: .2);
+  margin: size(60) 0;
+
+
+  .container {
+    @include container();
+    height: size(420);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @include mq(760){
+      justify-content: center;
+    }
+
+    .logo-imagem{
+      @include mq(760){
+        display: none;
+      }
+    }
+  }
+}

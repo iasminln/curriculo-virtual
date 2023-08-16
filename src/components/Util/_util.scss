@@ -1,0 +1,61 @@
+.titulo {
+  position: relative;
+  margin-bottom: size(20);
+
+  .titulo-main {
+    font-family: $type-second;
+    font-size: size(75);
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+
+    @include mq(1100){
+      font-size: size(55);
+    }
+
+    .dot{
+      color: $color-one;
+    }
+  }
+
+  .titulo-cursive {
+    letter-spacing: -2px;
+    z-index: 0;
+    position: absolute;
+    left: size(10);
+    bottom: size(15);
+    font-family: $type-third2;
+    color: white;
+    font-weight: 700;
+    font-size: size(75);
+    -webkit-text-stroke: .1px rgba($color: $color-two, $alpha: .6);
+
+    @include mq(1100){
+      font-size: size(55);
+    }
+
+  }
+}
+
+.titulo-secundario{
+  display: flex;
+  align-items: center;
+  margin-left: size(-40);
+  margin-bottom: size(15);
+
+  img{
+    margin-right: size(15);
+  }
+
+  .titulo-main {
+    font-size: size(32);
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: size(-15);
+
+    .dot{
+      color: $color-one;
+    }
+  }
+
+}

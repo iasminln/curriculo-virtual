@@ -1,0 +1,67 @@
+.experiencia {
+  @include container();
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: size(50);
+
+    @include mq(760){
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .text-01 {
+      font-size: size(18);
+      line-height: size(26);
+      letter-spacing: .5px;
+    }
+
+    .box {
+      background: rgba($color: $color-two, $alpha: .3);
+      border-radius: 6px;
+      padding: size(30);
+
+      .box-text-01 {
+        font-size: size(20);
+        line-height: size(26);
+        letter-spacing: .5px;
+        font-weight: 500;
+        margin-bottom: size(5);
+      }
+
+      .box-text-02 {
+        font-size: size(14);
+        line-height: size(26);
+        letter-spacing: .5px;
+        margin-bottom: size(35);
+      }
+
+      .box-text-03 {
+        font-size: size(16);
+        line-height: size(28);
+        letter-spacing: .5px;
+      }
+    }
+
+  }
+
+
+  .list-skills{
+    margin: 0 0  size(90) size(70);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .item-skills{
+      padding: size(4) size(8);
+      border-radius: 6px;
+      background: rgba($color: $color-two, $alpha: .3);
+      
+    }
+  }
+}
