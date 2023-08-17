@@ -4,6 +4,7 @@ import ImageIasmin from '../../../assets/iasmin.jpg'
 import ImageLayout from '../../../assets/pequeno-layout.png'
 import useMedia from '../../../Hooks/useMedia';
 import TituloSecundario from '../Util/TituloSecundario';
+import { Link } from 'react-router-dom';
 
 
 
@@ -49,9 +50,8 @@ const Sobre = () => {
             </p>
 
             <div className='container-layout'>
-              <a href="\antigo" target='_blank'>
-                <img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" />
-              </a>
+              <Link target='_blank' to="/antigo"><img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></Link>
+              
               <p style={{ fontStyle: 'italic', fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</p>
             </div>
 
