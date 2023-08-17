@@ -2,6 +2,10 @@
   background: $color-three;
   position: relative;
 
+  @include dark() {
+    background: $color-six;
+  }
+
   .container {
     @include container();
     min-height: size(150);

@@ -4,7 +4,12 @@
   top: 0;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 3px rgba($color: #8A2020, $alpha: .1);
+  box-shadow: 0 1px 3px rgba($color: $color-one, $alpha: .1);
+
+  @include dark() {
+    background: $color-six;
+    box-shadow: 0 1px 3px rgba($color: $color-eight, $alpha: .5);
+  }
 
   .container {
     @include container();
@@ -13,17 +18,21 @@
     justify-content: space-between;
     align-items: center;
 
+    .logo-darkmode {
+      display: flex;
+      align-items: center;
+    }
+
 
     .btn-menu {
       background: none;
       border: none;
       transition: .3s;
       cursor: pointer;
-      
+
       &.active {
         transform: rotate(90deg);
       }
-
     }
 
     .logo-name {
@@ -32,6 +41,7 @@
       font-weight: 600;
       letter-spacing: .5px;
       padding: size(10) 0;
+      margin-right: size(10);
 
       span {
         color: $color-one;
@@ -49,12 +59,26 @@
         right: 20px;
         box-shadow: 0 1px 2px rgba($color: $color-one, $alpha: .3);
 
+        @include dark() {
+          background: $color-nine;
+          box-shadow: 0 1px 2px rgba($color: $color-six, $alpha: .8);
+        }
+
         ul {
           flex-direction: column;
 
           .nav-item {
             padding: size(10) 0;
             border-bottom: 1px solid rgba($color: $color-three, $alpha: .5);
+
+            @include dark() {
+              background: $color-nine;
+              border-bottom: 1px solid rgba($color: $color-six, $alpha: .7);
+
+              &:last-child {
+                border: none;
+              }
+            }
 
 
             &:last-child {
@@ -106,11 +130,34 @@
           a {
             padding: size(10) 0;
 
-            @include mq(760){
+            @include mq(760) {
               padding: size(5) 0;
             }
           }
         }
+      }
+    }
+  }
+
+  .btn-dakr-mode {
+    cursor: pointer;
+    background: none;
+    border: 2px solid $color-three;
+    border-radius: 6px;
+    @include flex-center();
+    padding: size(8);
+    transition: .3s;
+
+    @include dark() {
+      border: 2px solid $color-eight;
+    }
+
+    &:hover {
+      background: $color-three;
+
+
+      @include dark() {
+        background: $color-eight;
       }
     }
   }

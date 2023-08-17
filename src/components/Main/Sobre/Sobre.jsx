@@ -36,7 +36,7 @@ const Sobre = () => {
       </div>
 
       <div className='container-btn-curiosidades'>
-        <span className='text-btn'> Deseja saber como essa página foi criada? </span>
+        <span className='text-btn'> Deseja saber mais sobre essa página? </span>
         <ButtonDefault onClick={() => setCuriosidades(!curiosidades)}>{curiosidades ? "Ver menos" : "Ver mais"}</ButtonDefault>
       </div>
 

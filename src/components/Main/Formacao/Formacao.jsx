@@ -8,7 +8,7 @@ const Formacao = () => {
   return (
     <section className='formacao' id='formacao'>
       <div className='container'>
-       <div className='content-text'><Titulo>Formação</Titulo></div> 
+       <div className='content-text'><Titulo styleCursive={{color: '#210E0E'}}>Formação</Titulo></div> 
         <div className='content'>
           <div className='box-formacao'>
             <p className='box-text-01'>Tecnólogo</p>

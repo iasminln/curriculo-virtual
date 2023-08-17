@@ -33,8 +33,18 @@
       2px -2px 0px rgba($color: $color-two, $alpha: .5),
       2px 0px 0px rgba($color: $color-two, $alpha: .5);
 
+
     @include mq(1100) {
       font-size: size(50);
+    }
+
+    @include dark() {
+      color: $color-seven;
+      text-shadow:
+        -2px -2px 0px rgba($color: $color-one, $alpha: .3),
+        -2px 2px 0px rgba($color: $color-one, $alpha: .3),
+        2px -2px 0px rgba($color: $color-one, $alpha: .3),
+        2px 0px 0px rgba($color: $color-one, $alpha: .3);
     }
 
   }
@@ -73,7 +83,15 @@
   font-size: size(18);
   transition: .3s;
 
+  @include dark() {
+    background: rgba($color: $color-two, $alpha: .1);
+  }
+
   &:hover {
     background-color: $color-two;
+
+    @include dark() {
+      background: $color-eight;
+    }
   }
 }

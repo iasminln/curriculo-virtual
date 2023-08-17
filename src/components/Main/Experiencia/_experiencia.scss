@@ -41,6 +41,10 @@
       border-radius: 6px;
       padding: size(30);
 
+      @include dark() {
+        background: rgba($color: $color-two, $alpha: .1);
+      }
+
       .box-text-01 {
         font-size: size(20);
         line-height: size(26);
@@ -67,15 +71,23 @@
 
 
   .list-skills {
-    margin: 0 0 size(90) size(70);
+    margin: 0 0 size(40) size(70);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    &:last-child{
+      margin-bottom: size(90);
+    }
 
     .item-skills {
       padding: size(4) size(8);
       border-radius: 6px;
       background: rgba($color: $color-two, $alpha: .3);
+
+      @include dark() {
+        background: rgba($color: $color-two, $alpha: .1);
+      }
 
     }
   }

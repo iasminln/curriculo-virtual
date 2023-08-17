@@ -19,3 +19,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin dark() {
+  body.darkmode & {
+    @content
+  }
+}

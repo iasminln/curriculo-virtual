@@ -3,6 +3,7 @@ import './css/style.scss'
 import Main from './components/Main/Main';
 import Antigo from './components/Antigo/Antigo';
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import { UserStorage } from './userContext';
 
 
 const App = () => {
@@ -16,10 +17,12 @@ const App = () => {
   return (
     <>
       <HashRouter>
-        <Routes>
-          <Route path='/*' element={<Main />} />
-          <Route path='/antigo' element={<Antigo />} />
-        </Routes>
+        <UserStorage>
+          <Routes>
+            <Route path='/*' element={<Main />} />
+            <Route path='/antigo' element={<Antigo />} />
+          </Routes>
+        </UserStorage>
       </HashRouter>
     </>
   );

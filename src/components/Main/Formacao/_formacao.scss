@@ -4,18 +4,31 @@
   margin-bottom: size(100);
   position: relative;
 
+  @include dark() {
+    background: $color-six;
+  }
+
+  .titulo-cursive {
+    @include dark() {
+    
+      @include mq(1000, min){
+        color: $color-six !important;
+      }
+    }
+  }
+
   .container {
     @include container();
     display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: center;
 
-    @include mq(1000){
+    @include mq(1000) {
       display: flex;
     }
 
-    .content-text{
-      @include mq(1000){
+    .content-text {
+      @include mq(1000) {
         position: absolute;
         top: size(-40);
       }
@@ -28,11 +41,11 @@
       gap: 60px;
       width: 100%;
 
-      @include mq(1000){
+      @include mq(1000) {
         justify-content: space-evenly;
       }
 
-      @include mq(760){
+      @include mq(760) {
         flex-direction: column;
       }
 
@@ -44,6 +57,10 @@
         height: size(270);
         display: grid;
         grid-template-rows: 1fr 3fr 1fr 1fr;
+
+        @include dark() {
+          background: $color-seven;
+        }
       }
 
       .box-text-01 {

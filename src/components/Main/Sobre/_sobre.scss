@@ -32,6 +32,10 @@
       font-size: size(18);
       line-height: size(24);
 
+      @include dark() {
+        background: rgba($color: $color-two, $alpha: .1);
+      }
+
       @include mq(760){
         font-size: size(17);
       }
@@ -39,6 +43,10 @@
       .destaque {
         font-weight: 600;
         color: $color-one;
+
+        @include dark() {
+          color: $color-three;
+        }
       }
 
       li {
@@ -104,8 +112,16 @@
         margin-bottom: size(8);
         transition: .3s;
 
+        @include dark() {
+          background: rgba($color: $color-two, $alpha: .1);
+        }
+
         &:hover{
           opacity: .8;
+
+          @include dark() {
+            opacity: .5;
+          }
         }
       }
     }

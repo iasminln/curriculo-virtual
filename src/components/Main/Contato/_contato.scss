@@ -2,6 +2,10 @@
   background: rgba($color: $color-two, $alpha: .3);
   position: relative;
 
+  @include dark() {
+    background: rgba($color: $color-eight, $alpha: .4);
+  }
+
   .container {
     @include container();
     min-height: size(360);
@@ -22,7 +26,7 @@
       justify-content: space-between;
       width: 100%;
 
-      @include mq(760){
+      @include mq(760) {
         flex-direction: column;
       }
 
@@ -31,14 +35,14 @@
         align-items: center;
         font-size: size(28);
         max-width: size(330);
-        
 
-        @include mq(1000){
+
+        @include mq(1000) {
           font-size: size(20);
           max-width: size(200);
         }
 
-        @include mq(760){
+        @include mq(760) {
           max-width: none;
           text-align: center;
           margin-bottom: size(40);

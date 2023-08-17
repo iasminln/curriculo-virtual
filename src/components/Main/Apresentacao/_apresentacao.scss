@@ -3,6 +3,10 @@
   box-shadow: 0 2px 4px rgba($color: #8A2020, $alpha: .2);
   margin: size(60) 0;
 
+  @include dark() {
+    background: $color-six;
+  }
+
 
   .container {
     @include container();
@@ -12,12 +16,12 @@
     align-items: center;
     gap: 10px;
 
-    @include mq(760){
+    @include mq(760) {
       justify-content: center;
     }
 
-    .logo-imagem{
-      @include mq(760){
+    .logo-imagem {
+      @include mq(760) {
         display: none;
       }
     }

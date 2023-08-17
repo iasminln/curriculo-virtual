@@ -22,8 +22,12 @@ body {
   color: $color-type;
   font-family: $type-first;
   position: relative;
-}
 
+  &.darkmode{
+    background: $color-seven;
+    color: $color-four;
+  }
+}
 
 
 h1,
@@ -36,6 +40,10 @@ h4 {
 a {
   text-decoration: none;
   color: $color-type;
+
+  @include dark() {
+    color: $color-four;
+  }
 }
 
 ul,
@@ -56,4 +64,8 @@ input {
   font-size: size(16);
   font-family: $type-first;
   color: $color-type;
+
+  @include dark() {
+    color: $color-four;
+  }
 }
