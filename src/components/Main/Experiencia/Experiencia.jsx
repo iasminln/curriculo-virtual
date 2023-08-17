@@ -13,7 +13,7 @@ const Experiencia = () => {
     <section className='experiencia' id='experiencia'>
       <Titulo>Experiência</Titulo>
       <div className='content'>
-        <p className='text-01'>Sou desenvolvedora Front-End, com experiência na implementação de e-commerces e na criação de apps customizados.<br /><br />
+        <p className='text-01'>Sou Iasmin, desenvolvedora Front-End, com experiência na implementação de e-commerces e na criação de apps customizados.<br /><br />
 
           Tive a oportunidade de atuar em importantes desafios, como solucionar problemas na regionalização do Supermercado Savegnago/Paulistão e criar um app de página de departamento personalizado para a Olympikus. Além disso, sou detalhista, replicando layouts pixel por pixel, e com noções de UX/UI.</p>
         <div className='box'>

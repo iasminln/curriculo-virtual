@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header className='header'>
       <div className='container'>
-        <p className='logo-name'>Iasmin<span>.</span></p>
+        <a href="/"><p className='logo-name'>Iasmin<span>.</span></p></a>
         {isMobile &&
           <button aria-label='Menu' className={`btn-menu ${navActive && 'active'}`} onClick={() => setNavActive(!navActive)}>
             <IconMenu />

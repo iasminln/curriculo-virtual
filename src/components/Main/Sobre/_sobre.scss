@@ -51,8 +51,6 @@
     .avatar {
       border-radius: 6px;
     }
-
-    
   }
 
   .container-btn-curiosidades {
@@ -62,16 +60,17 @@
     grid-column: 1/-1;
     margin-bottom: size(30);
 
-    @include mq(600){
+    @include mq(600) {
       flex-direction: column;
+
     }
 
-    .text-btn{
+    .text-btn {
       font-size: size(17);
       margin-right: size(10);
       text-align: center;
 
-      @include mq(600){
+      @include mq(600) {
         margin-right: 0;
         margin-bottom: size(10);
       }
@@ -81,6 +80,7 @@
       cursor: pointer;
       display: inline-block;
       padding: size(10) size(20);
+      width: 150px;
       border-radius: 6px;
       background: rgba($color: $color-two, $alpha: .3);
       border: none;
@@ -98,10 +98,33 @@
   .curiosidades {
     grid-column: 1/-1;
 
-    .text {
+    .content-curiosidades {
       margin: 0 0 size(90) size(70);
-      font-size: size(18);
-      line-height: size(24);
+
+      .text {
+        font-size: size(18);
+        line-height: size(24);
+        margin-bottom: size(20);
+      }
+
+      .container-layout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: size(30);
+      }
+
+      .img-layout {
+        border: 10px solid rgba($color: $color-two, $alpha: .3);
+        border-radius: 6px;
+        margin-bottom: size(8);
+        transition: .3s;
+
+        &:hover{
+          opacity: .8;
+        }
+      }
     }
 
   }

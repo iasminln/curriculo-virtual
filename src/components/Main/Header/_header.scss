@@ -35,7 +35,6 @@
     }
 
     .navegacao {
-
       &.nav-mobile {
         display: none;
         background: $color-four;
@@ -49,7 +48,6 @@
         ul {
           flex-direction: column;
 
-
           .nav-item {
             padding: size(10) 0;
             border-bottom: 1px solid rgba($color: $color-three, $alpha: .5);
@@ -62,8 +60,6 @@
               display: grid;
               grid-template-columns: 35px 1fr;
               align-items: center;
-
-
 
             }
           }
@@ -80,6 +76,22 @@
 
         .nav-item {
           padding-left: size(40);
+          font-size: size(17);
+
+          &::after {
+            content: '';
+            background: $color-one;
+            display: block;
+            width: 0;
+            height: 2px;
+            transition: .3s;
+          }
+
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
         }
       }
     }
