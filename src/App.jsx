@@ -1,31 +1,31 @@
-import React, { useEffect } from 'react';
-import './css/style.scss'
-import Main from './components/Main/Main';
-import Antigo from './components/Antigo/Antigo';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import Header from "./components/Header/Header"
+import Apresentacao from './components/Apresentacao/Apresentacao';
+import Experiencia from './components/Experiencia/Experiencia';
+import Formacao from './components/Formacao/Formacao';
+import Projetos from './components/Projetos/Projetos';
+import Contato from './components/Contato/Contato';
+import Creditos from './components/Creditos/Creditos';
+import Sobre from './components/Sobre/Sobre';
 import { UserStorage } from './userContext';
+import './css/style.scss'
 
 
-const App = () => {
-
-  useEffect(() => {
-    const olharLocal = location.pathname
-    if (olharLocal === '/antigo') document.body.classList.add('body-antigo')
-  }, [])
-
-
+const Main = () => {
   return (
     <>
-      <HashRouter>
-        <UserStorage>
-          <Routes>
-            <Route path='/*' element={<Main />} />
-            <Route path='/antigo' element={<Antigo />} />
-          </Routes>
-        </UserStorage>
-      </HashRouter>
+      <UserStorage>
+        <Header />
+        <Apresentacao />
+        <Experiencia />
+        <Formacao />
+        <Projetos />
+        <Sobre />
+        <Contato />
+        <Creditos />
+      </UserStorage>
     </>
   );
 };
 
-export default App;
+export default Main;

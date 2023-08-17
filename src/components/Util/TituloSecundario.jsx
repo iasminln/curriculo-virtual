@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageSetas from '../../../assets/setas.png'
+import ImageSetas from '../../assets/setas.png'
 
 
 const TituloSecundario = ({ children }) => {

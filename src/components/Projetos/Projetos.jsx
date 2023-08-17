@@ -1,9 +1,9 @@
 import React from 'react';
 import Titulo from '../Util/Titulo';
 import ItemProjeto from './ItemProjeto';
-import ImageProjeto01 from '../../../assets/projeto01.png'
-import ImageProjeto02 from '../../../assets/projeto02.png'
-import ImageProjeto03 from '../../../assets/projeto03.png'
+import ImageProjeto01 from '../../assets/projeto01.png'
+import ImageProjeto02 from '../../assets/projeto02.png'
+import ImageProjeto03 from '../../assets/projeto03.png'
 import ButtonDefault from '../Util/Button';
 
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useMedia from '../../../Hooks/useMedia';
+import useMedia from '../../Hooks/useMedia';
 import { IconDireita } from './Icons'
 import { IconEsquerda } from './Icons';
 

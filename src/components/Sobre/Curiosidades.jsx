@@ -1,7 +1,6 @@
 import React from 'react';
-import ImageLayout from '../../../assets/pequeno-layout.png'
+import ImageLayout from '../../assets/pequeno-layout.png'
 import TituloSecundario from '../Util/TituloSecundario';
-import { Link } from 'react-router-dom';
 
 
 const Curiosidades = () => {
@@ -18,7 +17,8 @@ const Curiosidades = () => {
         </p>
 
         <div className='container-layout'>
-          <Link target='_blank' to="/antigo"><img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></Link>
+          <a href="https://iasminln.github.io/layout-antigo/" target='_blank' rel="noreferrer"><img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></a>
+          
           <p style={{ fontStyle: 'italic', fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</p>
         </div>
 

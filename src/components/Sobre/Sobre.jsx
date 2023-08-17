@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import Titulo from '../Util/Titulo';
-import ImageIasmin from '../../../assets/iasmin.jpg'
-import useMedia from '../../../Hooks/useMedia';
+import ImageIasmin from '../../assets/iasmin.jpg'
+import useMedia from '../../Hooks/useMedia';
 import ButtonDefault from '../Util/Button';
 import Curiosidades from './Curiosidades';
-
 
 
 const Sobre = () => {

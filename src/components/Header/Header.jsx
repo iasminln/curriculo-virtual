@@ -6,9 +6,9 @@ import { IconProjetos } from './Icons';
 import { IconSobre } from './Icons';
 import { IconContato } from './Icons';
 import { IconCreditos } from './Icons';
-import useMedia from '../../../Hooks/useMedia'
+import useMedia from '../../Hooks/useMedia'
 import DarkMode from './DarkMode';
-import { UserContext } from '../../../userContext';
+import { UserContext } from '../../userContext';
 
 
 const Header = () => {

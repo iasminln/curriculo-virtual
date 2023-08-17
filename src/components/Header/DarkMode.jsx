@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { IconDarkMode } from './Icons';
 import { IconLightMode } from './Icons';
-import { UserContext } from '../../../userContext';
+import { UserContext } from '../../userContext';
 
 
 const DarkMode = () => {
