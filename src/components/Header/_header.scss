@@ -106,6 +106,10 @@
           padding-left: size(40);
           font-size: size(17);
 
+          @include mq(900){
+            padding-left: size(30);
+          }
+
 
           &::after {
             content: '';
