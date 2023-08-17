@@ -60,7 +60,7 @@ const Projetos = () => {
       </div>
 
       <div className='content-btn'>
-        <a href='https://github.com/iasminln' target='_blank' rel="noreferrer"><ButtonDefault>Ver mais</ButtonDefault></a>
+        <a href='https://github.com/iasminln' target='_blank' rel="noreferrer"><ButtonDefault>Ver mais projetos</ButtonDefault></a>
       </div>
     </section>
   )
