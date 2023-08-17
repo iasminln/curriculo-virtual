@@ -10,8 +10,8 @@
 
   .titulo-cursive {
     @include dark() {
-    
-      @include mq(1000, min){
+
+      @include mq(1000, min) {
         color: $color-six !important;
       }
     }
@@ -30,7 +30,7 @@
     .content-text {
       @include mq(1000) {
         position: absolute;
-        top: size(-40);
+        top: size(-42);
       }
     }
 

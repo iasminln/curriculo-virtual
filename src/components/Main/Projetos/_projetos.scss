@@ -2,6 +2,24 @@
   @include container();
   margin-bottom: size(80);
 
+  .text-inicial {
+    font-size: (18);
+    margin: size(20) 0 size(30) 0;
+
+    a {
+      color: $color-one;
+      font-weight: 600;
+
+      @include dark() {
+        color: $color-three;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .content {
     display: flex;
     align-items: flex-start;
@@ -10,7 +28,7 @@
     flex-wrap: wrap;
     gap: 10px;
 
-    @include mq(1000){
+    @include mq(1000) {
       justify-content: center;
       gap: 30px;
     }
@@ -44,7 +62,7 @@
       padding: size(8);
       cursor: pointer;
 
-      &:disabled{
+      &:disabled {
         opacity: .4;
         cursor: initial;
       }
@@ -62,7 +80,7 @@
   img {
     border: 10px solid rgba($color: $color-two, $alpha: .3);
     border-radius: 6px;
-    
+
   }
 
   .title {

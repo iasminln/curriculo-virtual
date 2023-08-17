@@ -21,9 +21,10 @@ body {
   padding: 0;
   color: $color-type;
   font-family: $type-first;
+  letter-spacing: .3px;
   position: relative;
 
-  &.darkmode{
+  &.darkmode {
     background: $color-seven;
     color: $color-four;
   }

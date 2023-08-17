@@ -13,6 +13,8 @@ const Projetos = () => {
     <section className='projetos' id='projetos'>
 
       <Titulo>Projetos</Titulo>
+      <p className='text-inicial'>Essa página-currículo também é um projeto. Acesse o repositório <a href="https://github.com/iasminln/curriculo-virtual" target="_blank" rel="noreferrer">AQUI</a>.
+      </p>
       <div className='content'>
         <ItemProjeto
           img={ImageProjeto01}

@@ -28,10 +28,10 @@
     color: white;
     font-size: size(75);
     text-shadow:
-      -2px -2px 0px rgba($color: $color-two, $alpha: .5),
-      -2px 2px 0px rgba($color: $color-two, $alpha: .5),
-      2px -2px 0px rgba($color: $color-two, $alpha: .5),
-      2px 0px 0px rgba($color: $color-two, $alpha: .5);
+      -2px -2px 0px rgba($color: $color-two, $alpha: .4),
+      -2px 2px 0px rgba($color: $color-two, $alpha: .4),
+      2px -2px 0px rgba($color: $color-two, $alpha: .4),
+      2px 0px 0px rgba($color: $color-two, $alpha: .4);
 
 
     @include mq(1100) {
@@ -63,7 +63,6 @@
   .titulo-main {
     font-size: size(32);
     font-weight: 600;
-    letter-spacing: .5px;
     margin-bottom: size(-15);
 
     .dot {
