@@ -7,11 +7,16 @@ const Experiencia = () => {
 
   const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'GraphQL', 'jQuery', 'Git', 'VTEX IO']
   const listSoftSkills = ['Detalhista', 'Trabalho em equipe', 'Resiliência', 'Comunicação', 'Criatividade']
+  const listIdiomas = ['Inglês: intermediário', 'Espanhol: intermediário']
 
 
   return (
     <section className='experiencia' id='experiencia'>
-      <Titulo>Experiência</Titulo>
+      <div className='container-titulo'>
+        <Titulo>Experiência</Titulo>
+        <a href="https://drive.google.com/file/d/17p71jkr-GNOY0ska2Du8QBeo90_KXLk_/view" target='_black'>Currículo.pdp</a>
+      </div>
+
       <div className='content'>
         <p className='text-01'>Sou Iasmin, desenvolvedora Front-End, com experiência na implementação de e-commerces e na criação de apps customizados.<br /><br />
 
@@ -28,6 +33,9 @@ const Experiencia = () => {
 
       <TituloSecundario>Soft Skills</TituloSecundario>
       <div className='list-skills'>{listSoftSkills.map((item) => <p key={item} className='item-skills'>{item}</p>)}</div>
+
+      <TituloSecundario>Idiomas</TituloSecundario>
+      <div className='list-skills'>{listIdiomas.map((item) => <p key={item} className='item-skills'>{item}</p>)}</div>
     </section>
   )
 }

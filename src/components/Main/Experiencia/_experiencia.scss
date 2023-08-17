@@ -1,6 +1,35 @@
 .experiencia {
   @include container();
 
+  .container-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    @include mq(760){
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      gap: 0;
+      margin-bottom: size(30);
+    }
+
+    a {
+      display: inline-block;
+      padding: size(10) size(20);
+      border-radius: 6px;
+      background: rgba($color: $color-two, $alpha: .3);
+      border: none;
+      font-size: size(18);
+      transition: .3s;
+
+      &:hover {
+        background-color: $color-two;
+      }
+    }
+  }
+
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;

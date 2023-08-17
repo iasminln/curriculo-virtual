@@ -8,7 +8,6 @@ import ImageProjeto03 from '../../../assets/projeto03.png'
 
 const Projetos = () => {
 
-
   return (
     <section className='projetos' id='projetos'>
 
@@ -57,13 +56,7 @@ const Projetos = () => {
         />
       </div>
 
-
-
-
-
       <div className='content-btn'> <a className='button' href='https://github.com/iasminln' target='_blank' rel="noreferrer">Ver mais</a></div>
-
-
     </section>
   )
 }

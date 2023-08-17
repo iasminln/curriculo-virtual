@@ -13,23 +13,6 @@ const Header = () => {
   const [navActive, setNavActive] = useState(false)
   const isMobile = useMedia('(max-width: 47.5rem)')
 
-  // useEffect(() => {
-  //   let valorScroll = window.scrollY
-
-  //   console.log("scroll", valorScroll)
-
-  //   if(valorScroll < 0){
-  //     window.addEventListener('scroll', changeScroll)
-  //   }
-
-  //   // changeScroll()
-
-
-  //   return () => {
-  //     window.removeEventListener('scroll', changeScroll)
-  //   }
-
-  // }, [])
 
   return (
     <header className='header'>

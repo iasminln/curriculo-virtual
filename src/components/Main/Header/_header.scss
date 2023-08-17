@@ -4,6 +4,7 @@
   top: 0;
   width: 100%;
   z-index: 3;
+  box-shadow: 0 1px 3px rgba($color: #8A2020, $alpha: .1);
 
   .container {
     @include container();
@@ -12,11 +13,13 @@
     justify-content: space-between;
     align-items: center;
 
+
     .btn-menu {
       background: none;
       border: none;
       transition: .3s;
-
+      cursor: pointer;
+      
       &.active {
         transform: rotate(90deg);
       }
@@ -52,6 +55,7 @@
             padding: size(10) 0;
             border-bottom: 1px solid rgba($color: $color-three, $alpha: .5);
 
+
             &:last-child {
               border: none;
             }
@@ -78,6 +82,7 @@
           padding-left: size(40);
           font-size: size(17);
 
+
           &::after {
             content: '';
             background: $color-one;
@@ -94,6 +99,14 @@
           &:hover {
             &::after {
               width: 100%;
+            }
+          }
+
+          a {
+            padding: size(10) 0;
+
+            @include mq(760){
+              padding: size(5) 0;
             }
           }
         }

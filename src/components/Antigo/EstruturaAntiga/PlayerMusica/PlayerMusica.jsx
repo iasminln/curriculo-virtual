@@ -34,8 +34,6 @@ const PlayerMusica = () => {
                   <a className='link-open' href="https://www.youtube.com/watch?v=CNoBoeg8j4I" target='_blank' rel="noreferrer">Youtube</a>
                 </div>
 
-
-
               </div>
             </div>
           }
