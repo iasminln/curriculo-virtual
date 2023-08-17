@@ -52,7 +52,7 @@ const Header = () => {
                 {isMobile && <IconContato color={darkAtivo ? '#FAEBEB' : '#210808'} />}Contato</a>
             </li>
             <li className='nav-item'>
-              <a href="#credito" onClick={() => setNavActive(false)}>
+              <a href="#creditos" onClick={() => setNavActive(false)}>
                 {isMobile && <IconCreditos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Créditos</a>
             </li>
           </ul>
