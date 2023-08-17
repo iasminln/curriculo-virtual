@@ -1,15 +1,15 @@
 .projetos {
   @include container();
-  margin-bottom: size(120);
+  margin-bottom: size(80);
 
   .content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: size(70);
+    margin-bottom: size(50);
     gap: 10px;
 
-    @include mq(760){
+    @include mq(760) {
       flex-direction: column;
       align-items: center;
     }
@@ -39,7 +39,7 @@
 .item-projeto {
   width: fit-content;
   margin-bottom: size(20);
-  cursor: pointer;
+
 
   .box {
     position: relative;
@@ -67,8 +67,32 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     border: 10px solid rgba($color: $color-two, $alpha: .3);
     border-radius: 6px;
+    padding: size(10);
+
+    .text-links {
+      margin-bottom: size(30);
+      text-align: center;
+    }
+
+    .links-projetos {
+      display: flex;
+      gap: 20px;
+    }
+
+    a {
+      padding: size(7) size(10);
+      background: $color-two;
+      border-radius: 6px;
+      transition: .3s;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-three;
+      }
+    }
   }
 
   &:hover {

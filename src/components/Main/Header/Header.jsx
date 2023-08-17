@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IconMenu } from './Icons';
 import { IconWork } from './Icons';
 import { IconStudy } from './Icons';
@@ -13,6 +13,24 @@ const Header = () => {
   const [navActive, setNavActive] = useState(false)
   const isMobile = useMedia('(max-width: 47.5rem)')
 
+  // useEffect(() => {
+  //   let valorScroll = window.scrollY
+
+  //   console.log("scroll", valorScroll)
+
+  //   if(valorScroll < 0){
+  //     window.addEventListener('scroll', changeScroll)
+  //   }
+
+  //   // changeScroll()
+
+
+  //   return () => {
+  //     window.removeEventListener('scroll', changeScroll)
+  //   }
+
+  // }, [])
+
   return (
     <header className='header'>
       <div className='container'>
@@ -25,12 +43,12 @@ const Header = () => {
 
         <nav className={`navegacao ${isMobile && 'nav-mobile'} ${navActive && 'active'}`}>
           <ul>
-            <li className='nav-item'><a href="#experiencia">{isMobile && <IconWork />} Experiência</a></li>
-            <li className='nav-item'><a href="#formacao">{isMobile && <IconStudy />}Formação</a></li>
-            <li className='nav-item'><a href="#projetos">{isMobile && <IconProjetos />}Projetos</a></li>
-            <li className='nav-item'><a href="#sobre">{isMobile && <IconSobre />}Sobre</a></li>
-            <li className='nav-item'><a href="#contato">{isMobile && <IconContato />}Contato</a></li>
-            <li className='nav-item'><a href="#credito">{isMobile && <IconCreditos />}Créditos</a></li>
+            <li className='nav-item'><a href="#experiencia" onClick={() => setNavActive(false)}>{isMobile && <IconWork />} Experiência</a></li>
+            <li className='nav-item'><a href="#formacao" onClick={() => setNavActive(false)}>{isMobile && <IconStudy />}Formação</a></li>
+            <li className='nav-item'><a href="#projetos" onClick={() => setNavActive(false)}>{isMobile && <IconProjetos />}Projetos</a></li>
+            <li className='nav-item'><a href="#sobre" onClick={() => setNavActive(false)}>{isMobile && <IconSobre />}Sobre</a></li>
+            <li className='nav-item'><a href="#contato" onClick={() => setNavActive(false)}>{isMobile && <IconContato />}Contato</a></li>
+            <li className='nav-item'><a href="#credito" onClick={() => setNavActive(false)}>{isMobile && <IconCreditos />}Créditos</a></li>
           </ul>
         </nav>
       </div>

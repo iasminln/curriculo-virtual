@@ -1,3 +1,30 @@
+body.body-antigo {
+  &::-webkit-scrollbar {
+    width: auto;
+
+    &-thumb {
+      background-color: $color-five;
+      box-shadow: inset 0 0 3px #000;
+    }
+
+    &-track {
+      background-color: $color-five;
+    }
+
+    &-button {
+      background-color: $color-five;
+      box-shadow: inset 0 0 3px #000;
+    }
+  }
+
+  a {
+    cursor: crosshair;
+  }
+}
+
+
+
+
 .container-antigo {
   display: flex;
   background: $color-five;

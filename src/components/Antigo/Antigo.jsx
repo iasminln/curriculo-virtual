@@ -9,12 +9,12 @@ import PlayerMusica from './EstruturaAntiga/PlayerMusica/PlayerMusica';
 
 const Antigo = () => {
   return (
-    <div className='pagina-antiga'>
-      <PlayerMusica/>
-     <HeaderAntigo/>
-     <BodyAntigo/>
-     <FooterAntigo/>
-    </div>
+    <>
+      <PlayerMusica />
+      <HeaderAntigo />
+      <BodyAntigo />
+      <FooterAntigo />
+    </>
   );
 };
 

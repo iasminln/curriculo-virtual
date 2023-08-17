@@ -1,25 +1,4 @@
 @import './EstruturaAntiga/PlayerMusica/player-musica';
-
-body::-webkit-scrollbar {
-  width: auto;
-
-  &-thumb {
-    background-color: $color-five;
-    box-shadow: inset 0 0 3px #000;
-  }
-
-  &-track {
-    background-color: $color-five;
-  }
-
-  &-button{
-    background-color: $color-five;
-    box-shadow: inset 0 0 3px #000;
-  }
-}
-
-.pagina-antiga{
-  a{ cursor: crosshair; }
-}
+@import './EstruturaAntiga/estrutura-antiga';
 
 

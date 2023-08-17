@@ -85,6 +85,10 @@
             width: 0;
             height: 2px;
             transition: .3s;
+
+            @include mq(760) {
+              display: none;
+            }
           }
 
           &:hover {

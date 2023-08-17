@@ -7,7 +7,7 @@ const ItemProjeto = ({ img, title, hover }) => {
     <section className='item-projeto'>
       <div className='box'>
         <img src={img} alt={title} />
-        <p className='text-hover'>{hover}</p>
+        <div className='text-hover'>{hover}</div>
       </div>
 
       <p className='title'>{title}</p>
