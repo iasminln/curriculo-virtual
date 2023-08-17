@@ -6,6 +6,7 @@ import Formacao from './Formacao/Formacao';
 import Projetos from './Projetos/Projetos';
 import Contato from './Contato/Contato';
 import Creditos from './Creditos/Creditos';
+import Sobre from './Sobre/Sobre';
 
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
       <Experiencia />
       <Formacao />
       <Projetos />
+      <Sobre />
       <Contato />
       <Creditos />
     </>

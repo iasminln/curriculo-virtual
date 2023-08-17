@@ -11,7 +11,6 @@ import useMedia from '../../../Hooks/useMedia'
 
 const Header = () => {
   const [navActive, setNavActive] = useState(false)
-
   const isMobile = useMedia('(max-width: 47.5rem)')
 
   return (

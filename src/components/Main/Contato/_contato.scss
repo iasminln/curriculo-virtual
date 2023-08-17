@@ -27,9 +27,11 @@
       }
 
       .text {
+        display: flex;
+        align-items: center;
         font-size: size(32);
         max-width: size(330);
-        text-align: center;
+        
 
         @include mq(1000){
           font-size: size(20);
@@ -38,6 +40,7 @@
 
         @include mq(760){
           max-width: none;
+          text-align: center;
           margin-bottom: size(40);
         }
       }

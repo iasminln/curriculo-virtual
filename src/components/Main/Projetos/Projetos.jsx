@@ -20,9 +20,7 @@ const Projetos = () => {
       </div>
       
       <div className='content-btn'> <a className='button' href='https://github.com/iasminln' target='_blank' rel="noreferrer">Ver mais</a></div>
-     
-
-
+    
 
     </section>
   )

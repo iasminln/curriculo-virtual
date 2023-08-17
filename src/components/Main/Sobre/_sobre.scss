@@ -1,0 +1,108 @@
+.sobre {
+  @include container();
+  margin-bottom: size(100);
+
+  .title-image {
+    display: flex;
+    align-items: center;
+
+
+    .avatar-pequeno {
+      border-radius: 100%;
+      width: 70px;
+      margin: 0 0 size(20) size(20);
+    }
+  }
+
+
+  .content-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: size(40);
+
+    @include mq(760) {
+      grid-template-columns: 1fr;
+    }
+
+    .box {
+      background: rgba($color: $color-two, $alpha: .3);
+      border-radius: 6px;
+      padding: size(30);
+      font-size: size(18);
+      line-height: size(24);
+
+      .destaque {
+        font-weight: 600;
+        color: $color-one;
+      }
+
+      li {
+        list-style: circle;
+        margin: 0 0 size(10) size(20);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+    .avatar {
+      border-radius: 6px;
+    }
+
+    
+  }
+
+  .container-btn-curiosidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    margin-bottom: size(30);
+
+    @include mq(600){
+      flex-direction: column;
+    }
+
+    .text-btn{
+      font-size: size(17);
+      margin-right: size(10);
+      text-align: center;
+
+      @include mq(600){
+        margin-right: 0;
+        margin-bottom: size(10);
+      }
+    }
+
+    .btn-curiosidades {
+      cursor: pointer;
+      display: inline-block;
+      padding: size(10) size(20);
+      border-radius: 6px;
+      background: rgba($color: $color-two, $alpha: .3);
+      border: none;
+      font-size: size(18);
+      transition: .3s;
+
+      &:hover {
+        background-color: $color-two;
+      }
+    }
+
+  }
+
+
+  .curiosidades {
+    grid-column: 1/-1;
+
+    .text {
+      margin: 0 0 size(90) size(70);
+      font-size: size(18);
+      line-height: size(24);
+    }
+
+  }
+}
