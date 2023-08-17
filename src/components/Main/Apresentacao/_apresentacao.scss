@@ -1,10 +1,11 @@
 .apresentacao {
   background: $color-two;
-  box-shadow: 0 2px 4px rgba($color: #8A2020, $alpha: .2);
+  box-shadow: 0 2px 4px rgba($color: $color-one, $alpha: .2);
   margin: size(60) 0;
 
   @include dark() {
     background: $color-six;
+    box-shadow: 0 1px 3px rgba($color: $color-eight, $alpha: .5);
   }
 
 
