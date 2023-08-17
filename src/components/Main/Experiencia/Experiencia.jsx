@@ -1,6 +1,9 @@
 import React from 'react';
 import Titulo from '../Util/Titulo';
 import TituloSecundario from '../Util/TituloSecundario';
+import ButtonDefault from '../Util/Button';
+import { IconDownload } from './Icons';
+
 
 
 const Experiencia = () => {
@@ -14,7 +17,13 @@ const Experiencia = () => {
     <section className='experiencia' id='experiencia'>
       <div className='container-titulo'>
         <Titulo>Experiência</Titulo>
-        <a href="https://drive.google.com/file/d/17p71jkr-GNOY0ska2Du8QBeo90_KXLk_/view" target='_black'>Currículo.pdp</a>
+        <a href="https://drive.google.com/file/d/17p71jkr-GNOY0ska2Du8QBeo90_KXLk_/view" target='_black'>
+          <ButtonDefault style={{display: 'flex', alignItems:'center'}}>
+            <IconDownload />
+            Currículo.PDF
+          </ButtonDefault>
+        </a>
+
       </div>
 
       <div className='content'>

@@ -22,22 +22,7 @@
   }
 
   .content-btn {
-    display: flex;
-    justify-content: center;
-
-    .button {
-      display: inline-block;
-      padding: size(10) size(20);
-      border-radius: 6px;
-      background: rgba($color: $color-two, $alpha: .3);
-      border: none;
-      font-size: size(18);
-      transition: .3s;
-
-      &:hover {
-        background-color: $color-two;
-      }
-    }
+    @include flex-center();
   }
 
 }
@@ -47,16 +32,12 @@
   margin-bottom: size(20);
 
   .container-btn-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     gap: 20px;
     margin: size(10) 0;
 
     .btn-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex-center();
       background: $color-three;
       border: none;
       border-radius: 100%;
@@ -95,11 +76,9 @@
     top: 0;
     left: 0;
     opacity: 0;
-    display: flex;
     width: 100%;
     height: 100%;
-    align-items: center;
-    justify-content: center;
+    @include flex-center();
     flex-direction: column;
     border: 10px solid rgba($color: $color-two, $alpha: .3);
     border-radius: 6px;
@@ -117,18 +96,6 @@
     .links-projetos {
       display: flex;
       gap: 20px;
-    }
-
-    a {
-      padding: size(7) size(10);
-      background: $color-two;
-      border-radius: 6px;
-      transition: .3s;
-      cursor: pointer;
-
-      &:hover {
-        background: $color-three;
-      }
     }
   }
 

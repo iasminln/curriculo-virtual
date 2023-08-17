@@ -9,11 +9,11 @@
     z-index: 2;
     position: relative;
 
-    @include mq(1100){
+    @include mq(1100) {
       font-size: size(50);
     }
 
-    .dot{
+    .dot {
       color: $color-one;
     }
   }
@@ -26,24 +26,27 @@
     bottom: size(15);
     font-family: $type-third2;
     color: white;
-    font-weight: 700;
     font-size: size(75);
-    -webkit-text-stroke: .1px rgba($color: $color-two, $alpha: .6);
+    text-shadow:
+      -2px -2px 0px rgba($color: $color-two, $alpha: .5),
+      -2px 2px 0px rgba($color: $color-two, $alpha: .5),
+      2px -2px 0px rgba($color: $color-two, $alpha: .5),
+      2px 0px 0px rgba($color: $color-two, $alpha: .5);
 
-    @include mq(1100){
+    @include mq(1100) {
       font-size: size(50);
     }
 
   }
 }
 
-.titulo-secundario{
+.titulo-secundario {
   display: flex;
   align-items: center;
   margin-left: size(-40);
   margin-bottom: size(15);
 
-  img{
+  img {
     margin-right: size(15);
   }
 
@@ -53,9 +56,24 @@
     letter-spacing: .5px;
     margin-bottom: size(-15);
 
-    .dot{
+    .dot {
       color: $color-one;
     }
   }
+}
 
+.button-default {
+  cursor: pointer;
+  display: inline-block;
+  padding: size(8) size(14);
+  min-width: 120px;
+  border-radius: 6px;
+  background: rgba($color: $color-two, $alpha: .3);
+  border: none;
+  font-size: size(18);
+  transition: .3s;
+
+  &:hover {
+    background-color: $color-two;
+  }
 }

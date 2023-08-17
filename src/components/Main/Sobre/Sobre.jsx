@@ -5,6 +5,7 @@ import ImageLayout from '../../../assets/pequeno-layout.png'
 import useMedia from '../../../Hooks/useMedia';
 import TituloSecundario from '../Util/TituloSecundario';
 import { Link } from 'react-router-dom';
+import ButtonDefault from '../Util/Button';
 
 
 
@@ -36,7 +37,7 @@ const Sobre = () => {
 
       <div className='container-btn-curiosidades'>
         <span className='text-btn'> Deseja saber como essa página foi criada? </span>
-        <button className='btn-curiosidades' onClick={() => setCuriosidades(!curiosidades)}>{curiosidades ? "Ver menos" : "Ver mais"}</button>
+        <ButtonDefault onClick={() => setCuriosidades(!curiosidades)}>{curiosidades ? "Ver menos" : "Ver mais"}</ButtonDefault>
       </div>
 
       {curiosidades &&
@@ -51,7 +52,7 @@ const Sobre = () => {
 
             <div className='container-layout'>
               <Link target='_blank' to="/antigo"><img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></Link>
-              
+
               <p style={{ fontStyle: 'italic', fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</p>
             </div>
 
