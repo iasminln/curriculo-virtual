@@ -35,9 +35,7 @@
     }
 
     .content {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      @include display-flex($j: flex-end);
       gap: 60px;
       width: 100%;
 
@@ -64,24 +62,20 @@
       }
 
       .box-text-01 {
-        font-size: size(16);
-        line-height: size(28);
+        @include fontSize(16);
       }
 
       .box-text-02 {
-        font-size: size(20);
-        line-height: size(28);
+        @include fontSize(28);
         font-weight: 500;
       }
 
       .box-text-03 {
-        font-size: size(13);
-        line-height: size(23);
+        @include fontSize(13);
       }
 
       .box-text-04 {
-        font-size: size(14);
-        line-height: size(18);
+        @include fontSize(14);
         align-self: flex-end;
       }
     }

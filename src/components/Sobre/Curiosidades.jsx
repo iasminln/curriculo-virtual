@@ -26,7 +26,7 @@ const Curiosidades = () => {
           Vale lembrar que esse layout antigo não foi feito para ser visualizado no celular, ou seja, ele vai quebrar. Para quem estranhar o tamanho tão pequeno, lembrem que os displays eram de 800 x 600 pixels. 😂 Se você mudar a configuração do seu monitor para 800 x 600, vai ver que fica, ó, <span style={{ fontStyle: 'italic' }}> chuchu beleza.</span> 👌
         </p>
 
-        <p className='text'>Essa página também tem seu próprio repositório e você pode acessá-lo <a href="https://github.com/iasminln/layout-antigo" target="_blank" rel="noreferrer">AQUI</a>.
+        <p className='text'>Essa página também tem seu próprio repositório e você pode acessá-lo <a href="https://github.com/iasminln/layout-antigo" target="_blank" rel="noreferrer">AQUI</a>. Projeto feito com ReactJS e Sass.
       </p>
 
       </div>

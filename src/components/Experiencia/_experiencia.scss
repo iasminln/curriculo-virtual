@@ -2,15 +2,11 @@
   @include container();
 
   .container-titulo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include display-flex($j: space-between);
     gap: 30px;
 
     @include mq(760){
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: start;
+      @include display-flex($a: start, $j: flex-start, $f: column);
       gap: 0;
       margin-bottom: size(30);
     }
@@ -31,35 +27,32 @@
     }
 
     .text-01 {
-      font-size: size(18);
-      line-height: size(26);
+      @include fontSize(18);
     }
 
     .box {
       background: rgba($color: $color-two, $alpha: .3);
       border-radius: 6px;
       padding: size(30);
+      align-self: baseline;
 
       @include dark() {
         background: rgba($color: $color-two, $alpha: .1);
       }
 
       .box-text-01 {
-        font-size: size(20);
-        line-height: size(26);
+        @include fontSize(20);
         font-weight: 500;
         margin-bottom: size(5);
       }
 
       .box-text-02 {
-        font-size: size(14);
-        line-height: size(26);
+        @include fontSize(14);
         margin-bottom: size(35);
       }
 
       .box-text-03 {
-        font-size: size(16);
-        line-height: size(28);
+        @include fontSize(16);
       }
     }
   }

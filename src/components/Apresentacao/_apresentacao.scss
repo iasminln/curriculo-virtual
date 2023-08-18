@@ -8,13 +8,10 @@
     box-shadow: 0 1px 3px rgba($color: $color-eight, $alpha: .5);
   }
 
-
   .container {
     @include container();
     height: size(420);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-flex($j: space-between);
     gap: 10px;
 
     @include mq(760) {

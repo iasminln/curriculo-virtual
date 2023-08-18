@@ -3,9 +3,7 @@
   margin-bottom: size(100);
 
   .title-image {
-    display: flex;
-    align-items: center;
-
+    @include display-flex($j: flex-start);
 
     .avatar-pequeno {
       border-radius: 100%;
@@ -29,15 +27,14 @@
       background: rgba($color: $color-two, $alpha: .3);
       border-radius: 6px;
       padding: size(30);
-      font-size: size(18);
-      line-height: size(24);
+      @include fontSize(18);
 
       @include dark() {
         background: rgba($color: $color-two, $alpha: .1);
       }
 
       @include mq(760) {
-        font-size: size(17);
+        @include fontSize(17);
       }
 
       .destaque {
@@ -57,7 +54,6 @@
           margin-bottom: 0;
         }
       }
-
     }
 
     .avatar {
@@ -66,7 +62,7 @@
   }
 
   .container-btn-curiosidades {
-    @include flex-center();
+    @include display-flex();
     grid-column: 1/-1;
     margin-bottom: size(30);
 
@@ -76,7 +72,7 @@
     }
 
     .text-btn {
-      font-size: size(17);
+      @include fontSize(17);
       margin-right: size(10);
       text-align: center;
 
@@ -95,8 +91,7 @@
       margin: 0 0 size(90) size(62);
 
       .text {
-        font-size: size(18);
-        line-height: size(24);
+        @include fontSize(18);
         margin-bottom: size(20);
 
         a {
@@ -114,7 +109,7 @@
       }
 
       .container-layout {
-        @include flex-center();
+        @include display-flex();
         flex-direction: column;
         margin-bottom: size(30);
       }
@@ -138,6 +133,5 @@
         }
       }
     }
-
   }
 }

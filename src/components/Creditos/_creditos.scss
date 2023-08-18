@@ -11,8 +11,7 @@
     min-height: size(150);
     padding-top: size(30);
     padding-bottom: size(30);
-    display: flex;
-    align-items: center;
+    @include display-flex($j: flex-start);
 
     .content-titulo {
       position: absolute;
@@ -26,23 +25,20 @@
       width: 100%;
 
       @include mq(600){
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        @include display-flex($j: flex-start, $f: column);
       }
 
       .text {
         display: flex;
-        font-size: size(18);
+        @include fontSize(18);
         padding-right: 20px;
         width: 100%;
 
         @include mq(600){
           padding-right: 0;
           margin-bottom: size(15);
-          font-size: size(16);
+          @include fontSize(16);
         }
-
       }
 
       .conteudo-links{
@@ -52,8 +48,7 @@
       }
 
       .link {
-        font-size: size(15);
-        line-height: size(25);
+        @include fontSize(15);
         text-align: end;
 
         @include mq(600){

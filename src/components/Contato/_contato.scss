@@ -11,8 +11,7 @@
     min-height: size(360);
     padding-top: size(80);
     padding-bottom: size(100);
-    display: flex;
-    align-items: center;
+    @include display-flex($j: flex-start);
 
 
     .content-titulo {
@@ -21,9 +20,7 @@
     }
 
     .conteudo {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include display-flex($j: space-between);
       width: 100%;
 
       @include mq(760) {
@@ -31,14 +28,13 @@
       }
 
       .text {
-        display: flex;
-        align-items: center;
-        font-size: size(28);
+        @include display-flex($j: initial);
+        @include fontSize(28);
         max-width: size(330);
 
 
         @include mq(1000) {
-          font-size: size(20);
+          @include fontSize(20);
           max-width: size(200);
         }
 
@@ -50,10 +46,9 @@
       }
 
       .links {
-        display: flex;
+        @include display-flex();
         gap: 20px;
         flex-wrap: wrap;
-        justify-content: center;
 
         a {
           transition: .3s;

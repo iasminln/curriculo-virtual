@@ -62,7 +62,7 @@ img {
 button,
 input {
   display: block;
-  font-size: size(16);
+  @include fontSize(16);
   font-family: $type-first;
   color: $color-type;
 

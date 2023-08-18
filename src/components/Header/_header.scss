@@ -14,13 +14,10 @@
   .container {
     @include container();
     height: size(60);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include display-flex($j: space-between);
 
     .logo-darkmode {
-      display: flex;
-      align-items: center;
+      @include display-flex();
     }
 
 
@@ -37,7 +34,7 @@
 
     .logo-name {
       font-family: $type-second;
-      font-size: size(20);
+      @include fontSize(20);
       font-weight: 600;
       padding: size(10) 0;
       margin-right: size(10);
@@ -104,9 +101,9 @@
 
         .nav-item {
           padding-left: size(40);
-          font-size: size(17);
+          @include fontSize(17);
 
-          @include mq(900){
+          @include mq(900) {
             padding-left: size(30);
           }
 
@@ -147,7 +144,7 @@
     background: none;
     border: 2px solid $color-three;
     border-radius: 6px;
-    @include flex-center();
+    @include display-flex();
     padding: size(8);
     transition: .3s;
 
