@@ -13,6 +13,10 @@
       @include fontSize(50);
     }
 
+    @include mediaq(360){
+      @include fontSize(40)
+    }
+
     .dot {
       color: $color-one;
     }
@@ -36,6 +40,10 @@
 
     @include mediaq(1100) {
       @include fontSize(50);
+    }
+    
+    @include mediaq(360){
+      @include fontSize(40)
     }
 
     @include dark() {

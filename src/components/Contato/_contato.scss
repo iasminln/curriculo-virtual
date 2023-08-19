@@ -49,7 +49,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
-        flex-wrap: wrap;
+
+        @include mediaq(400) {
+          grid-template-columns: 1fr;
+        }
 
         a {
           transition: .3s;
