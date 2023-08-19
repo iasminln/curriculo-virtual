@@ -19,7 +19,7 @@ const DarkMode = () => {
       </button>
       }
     </div>
-  )
+  ) 
 }
 
 export default DarkMode;
