@@ -7,7 +7,7 @@
   line-height: size($fontSize + $lineSize);
 }
 
-@mixin mq($width, $type: max) {
+@mixin mediaq($width, $type: max) {
   @media (#{$type}-width: ($width + px)) {
     @content;
   }

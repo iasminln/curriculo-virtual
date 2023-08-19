@@ -6,10 +6,8 @@ import { IconDownload } from './Icons';
 import { UserContext } from '../../userContext';
 
 
-
 const Experiencia = () => {
   const { darkAtivo } = useContext(UserContext)
-
 
   const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'GraphQL', 'jQuery', 'Git', 'VTEX IO']
   const listSoftSkills = ['Detalhista', 'Trabalho em equipe', 'Resiliência', 'Comunicação', 'Criatividade']
@@ -20,8 +18,9 @@ const Experiencia = () => {
     <section className='experiencia' id='experiencia'>
       <div className='container-titulo'>
         <Titulo>Experiência</Titulo>
+
         <a href="https://drive.google.com/file/d/17p71jkr-GNOY0ska2Du8QBeo90_KXLk_/view" target='_black'>
-          <ButtonDefault style={{ display: 'flex', alignItems: 'center' }}>
+          <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo de Iasmin em PDF.' >
             <IconDownload color={darkAtivo ? '#FAEBEB' : '#210808'} />
             Currículo.PDF
           </ButtonDefault>

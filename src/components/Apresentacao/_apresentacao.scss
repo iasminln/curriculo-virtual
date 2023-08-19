@@ -14,12 +14,12 @@
     @include display-flex($j: space-between);
     gap: 10px;
 
-    @include mq(760) {
+    @include mediaq(760) {
       justify-content: center;
     }
 
     .logo-imagem {
-      @include mq(760) {
+      @include mediaq(760) {
         display: none;
       }
     }

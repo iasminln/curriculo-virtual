@@ -24,7 +24,7 @@
       align-items: center;
       width: 100%;
 
-      @include mq(600){
+      @include mediaq(600){
         @include display-flex($j: flex-start, $f: column);
       }
 
@@ -34,7 +34,7 @@
         padding-right: 20px;
         width: 100%;
 
-        @include mq(600){
+        @include mediaq(600){
           padding-right: 0;
           margin-bottom: size(15);
           @include fontSize(16);
@@ -51,7 +51,7 @@
         @include fontSize(15);
         text-align: end;
 
-        @include mq(600){
+        @include mediaq(600){
           text-align: start;
         }
 

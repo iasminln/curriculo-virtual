@@ -5,7 +5,7 @@
     @include display-flex($j: space-between);
     gap: 30px;
 
-    @include mq(760){
+    @include mediaq(760){
       @include display-flex($a: start, $j: flex-start, $f: column);
       gap: 0;
       margin-bottom: size(30);
@@ -20,7 +20,7 @@
     gap: 60px;
     margin-bottom: size(50);
 
-    @include mq(760) {
+    @include mediaq(760) {
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -76,7 +76,6 @@
       @include dark() {
         background: rgba($color: $color-two, $alpha: .1);
       }
-
     }
   }
 }

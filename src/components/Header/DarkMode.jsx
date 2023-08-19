@@ -10,11 +10,11 @@ const DarkMode = () => {
 
   return (
     <div className='dark-mode'>
-      {!darkAtivo && <button className='btn-dakr-mode' onClick={() => { handleClick('dark') }}>
+      {!darkAtivo && <button className='btn-dakr-mode' aria-label='Ativar dark mode' title='Dark mode' onClick={() => { handleClick('dark') }}>
         <IconDarkMode color='#210808' />
       </button>
       }
-      {darkAtivo && <button className='btn-dakr-mode' onClick={() => { handleClick('light') }}>
+      {darkAtivo && <button className='btn-dakr-mode' aria-label='Ativar light mode' title='Light mode' onClick={() => { handleClick('light') }}>
         <IconLightMode color='#FAEBEB' />
       </button>
       }

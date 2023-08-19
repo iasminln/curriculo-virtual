@@ -17,8 +17,9 @@ const Curiosidades = () => {
         </p>
 
         <div className='container-layout'>
-          <a href="https://iasminln.github.io/layout-antigo/" target='_blank' rel="noreferrer"><img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></a>
-          
+          <a href="https://iasminln.github.io/layout-antigo/" target='_blank' rel="noreferrer" aria-label='Link para visualizar o layout antigo.' title='Clique para acessar!'>
+            <img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></a>
+
           <p style={{ fontStyle: 'italic', fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</p>
         </div>
 
@@ -27,7 +28,7 @@ const Curiosidades = () => {
         </p>
 
         <p className='text'>Essa página também tem seu próprio repositório e você pode acessá-lo <a href="https://github.com/iasminln/layout-antigo" target="_blank" rel="noreferrer">AQUI</a>. Projeto feito com ReactJS e Sass.
-      </p>
+        </p>
 
       </div>
     </div>

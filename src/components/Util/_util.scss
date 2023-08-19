@@ -9,7 +9,7 @@
     z-index: 2;
     position: relative;
 
-    @include mq(1100) {
+    @include mediaq(1100) {
       @include fontSize(50);
     }
 
@@ -34,7 +34,7 @@
       2px 0px 0px rgba($color: $color-two, $alpha: .4);
 
 
-    @include mq(1100) {
+    @include mediaq(1100) {
       @include fontSize(50);
     }
 

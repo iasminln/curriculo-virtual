@@ -23,7 +23,7 @@
       @include display-flex($j: space-between);
       width: 100%;
 
-      @include mq(760) {
+      @include mediaq(760) {
         flex-direction: column;
       }
 
@@ -33,12 +33,12 @@
         max-width: size(330);
 
 
-        @include mq(1000) {
+        @include mediaq(1000) {
           @include fontSize(20);
           max-width: size(200);
         }
 
-        @include mq(760) {
+        @include mediaq(760) {
           max-width: none;
           text-align: center;
           margin-bottom: size(40);

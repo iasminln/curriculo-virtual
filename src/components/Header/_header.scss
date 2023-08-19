@@ -103,7 +103,7 @@
           padding-left: size(40);
           @include fontSize(17);
 
-          @include mq(900) {
+          @include mediaq(900) {
             padding-left: size(30);
           }
 
@@ -116,7 +116,7 @@
             height: 2px;
             transition: .3s;
 
-            @include mq(760) {
+            @include mediaq(760) {
               display: none;
             }
           }
@@ -130,7 +130,7 @@
           a {
             padding: size(10) 0;
 
-            @include mq(760) {
+            @include mediaq(760) {
               padding: size(5) 0;
             }
           }
