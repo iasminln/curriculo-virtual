@@ -1,8 +1,6 @@
 import React from 'react';
 import Titulo from '../Util/Titulo';
-import IconLinkedin from '../../assets/icon-linkedin.png'
-import IconGithub from '../../assets/icon-github.png'
-import IconGmail from '../../assets/icon-gmail.png'
+import { IconEmail, IconLinkedin, IconGithub, IconInstagram } from './Icons'
 
 
 const Contato = () => {
@@ -16,9 +14,10 @@ const Contato = () => {
         <div className='conteudo'>
           <p className='text'>Vamos conversar? Entre em contato! 😊</p>
           <div className='links'>
-            <a href="https://www.linkedin.com/in/iasminln/" target='_blank' rel="noreferrer" aria-label='Link de contato para linkedin.' ><img src={IconLinkedin} alt="" /></a>
-            <a href="https://github.com/iasminln" target='_blank' rel="noreferrer" aria-label='Link de contato para github.' ><img src={IconGithub} alt="" /></a>
-            <a href="mailto:iasmin.ln94@gmail.com" target='_blank' rel="noreferrer" aria-label='Link de contato para e-mail.' ><img src={IconGmail} alt="" /></a>
+            <a href="https://www.linkedin.com/in/iasminln/" target='_blank' rel="noreferrer" aria-label='Link de contato para linkedin.' ><IconLinkedin/></a>
+            <a href="https://github.com/iasminln" target='_blank' rel="noreferrer" aria-label='Link de contato para github.' ><IconGithub/></a>
+            <a href="mailto:iasmin.ln94@gmail.com" target='_blank' rel="noreferrer" aria-label='Link de contato para e-mail.' ><IconEmail/></a>
+            <a href="https://www.instagram.com/iasminln/" target='_blank' rel="noreferrer" aria-label='Link de contato para instagram.' ><IconInstagram/></a>
           </div>
         </div>
 

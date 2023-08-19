@@ -30,24 +30,25 @@
       .text {
         @include display-flex($j: initial);
         @include fontSize(28);
-        max-width: size(330);
+        margin-right: size(30);
 
 
         @include mediaq(1000) {
           @include fontSize(20);
-          max-width: size(200);
+
         }
 
         @include mediaq(760) {
           max-width: none;
           text-align: center;
-          margin-bottom: size(40);
+          margin: 0 0 size(40) 0;
         }
       }
 
       .links {
-        @include display-flex();
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
         flex-wrap: wrap;
 
         a {
