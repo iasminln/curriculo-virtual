@@ -9,7 +9,7 @@ import { UserContext } from '../../userContext';
 const Experiencia = () => {
   const { darkAtivo } = useContext(UserContext)
 
-  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'GraphQL', 'jQuery', 'Git', 'VTEX IO']
+  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'REST API', 'GraphQL', 'jQuery', 'Git', 'VTEX IO']
   const listSoftSkills = ['Detalhista', 'Trabalho em equipe', 'Resiliência', 'Comunicação', 'Criatividade']
   const listIdiomas = ['Inglês: intermediário', 'Espanhol: intermediário']
 
