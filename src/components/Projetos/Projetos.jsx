@@ -21,9 +21,10 @@ const Projetos = () => {
           title='Rede social para pets'
           hover={
             <>
-              <p className='text-links'>Projeto feito em ReactJS e Sass, utilizando-se Vite.</p>
+              <p className='text-links'>Projeto feito em ReactJS e Sass, utilizando-se Vite. (em andamento)</p>
               <div className='links-projetos'>
                 <a href="https://github.com/iasminln/rede-social-pets" target='_blank' rel="noreferrer"><ButtonDefault>Repositório</ButtonDefault></a>
+                <a href="https://iasminln.github.io/rede-social-pets/" target='_blank' rel="noreferrer"><ButtonDefault>Acesse</ButtonDefault></a>
               </div>
 
             </>
