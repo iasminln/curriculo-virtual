@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { IconMenu } from './Icons';
 import { IconWork } from './Icons';
 import { IconStudy } from './Icons';
@@ -17,6 +17,21 @@ const Header = () => {
   const { darkAtivo } = useContext(UserContext)
 
 
+  const clickHtml = (e) => {
+    const nav = document.querySelector('.allNav')
+
+    if (!nav.contains(e.target)) {
+      document.body.removeEventListener('click', clickHtml);
+      setNavActive(false)
+    }
+  }
+
+  const handleClick = () => {
+    setNavActive(!navActive)
+    document.body.addEventListener('click', clickHtml)
+  }
+
+
   return (
     <header className='header'>
       <div className='container'>
@@ -25,38 +40,41 @@ const Header = () => {
           <DarkMode />
         </div>
 
-        {isMobile &&
-          <button aria-label='Menu' className={`btn-menu ${navActive && 'active'}`} onClick={() => setNavActive(!navActive)}>
-            <IconMenu color={darkAtivo ? '#FAEBEB' : '#210808'} />
-          </button>
-        }
+        <div className='allNav'>
+          {isMobile &&
+            <button aria-label='Menu' className={`btn-menu ${navActive && 'active'}`} onClick={handleClick}>
+              <IconMenu color={darkAtivo ? '#FAEBEB' : '#210808'} />
+            </button>
+          }
 
-        <nav className={`navegacao ${isMobile && 'nav-mobile'} ${navActive && 'active'}`}>
-          <ul>
-            <li className='nav-item'>
-              <a href="#experiencia" onClick={() => setNavActive(false)}>
-                {isMobile && <IconWork color={darkAtivo ? '#FAEBEB' : '#210808'} />} Experiência</a>
-            </li>
-            <li className='nav-item'>
-              <a href="#formacao" onClick={() => setNavActive(false)}>
-                {isMobile && <IconStudy color={darkAtivo ? '#FAEBEB' : '#210808'} />}Formação</a></li>
-            <li className='nav-item'>
-              <a href="#projetos" onClick={() => setNavActive(false)}>
-                {isMobile && <IconProjetos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Projetos</a>
-            </li>
-            <li className='nav-item'>
-              <a href="#sobre" onClick={() => setNavActive(false)}>
-                {isMobile && <IconSobre color={darkAtivo ? '#FAEBEB' : '#210808'} />}Sobre</a></li>
-            <li className='nav-item'>
-              <a href="#contato" onClick={() => setNavActive(false)}>
-                {isMobile && <IconContato color={darkAtivo ? '#FAEBEB' : '#210808'} />}Contato</a>
-            </li>
-            <li className='nav-item'>
-              <a href="#creditos" onClick={() => setNavActive(false)}>
-                {isMobile && <IconCreditos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Créditos</a>
-            </li>
-          </ul>
-        </nav>
+          <nav className={`navegacao ${isMobile && 'nav-mobile'} ${navActive && 'active'}`}>
+            <ul>
+              <li className='nav-item'>
+                <a href="#experiencia" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconWork color={darkAtivo ? '#FAEBEB' : '#210808'} />} Experiência</a>
+              </li>
+              <li className='nav-item'>
+                <a href="#formacao" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconStudy color={darkAtivo ? '#FAEBEB' : '#210808'} />}Formação</a></li>
+              <li className='nav-item'>
+                <a href="#projetos" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconProjetos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Projetos</a>
+              </li>
+              <li className='nav-item'>
+                <a href="#sobre" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconSobre color={darkAtivo ? '#FAEBEB' : '#210808'} />}Sobre</a></li>
+              <li className='nav-item'>
+                <a href="#contato" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconContato color={darkAtivo ? '#FAEBEB' : '#210808'} />}Contato</a>
+              </li>
+              <li className='nav-item'>
+                <a href="#creditos" onClick={() => setNavActive(false)}>
+                  {isMobile && <IconCreditos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Créditos</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
       </div>
     </header>
   )
