@@ -12,7 +12,8 @@ html {
   scroll-margin-top: size(70);
 }
 
-#formacao:target {
+#formacao:target, 
+#contato:target {
   scroll-margin-top: size(120);
 }
 
