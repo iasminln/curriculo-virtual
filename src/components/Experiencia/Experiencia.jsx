@@ -9,7 +9,7 @@ import { UserContext } from '../../userContext';
 const Experiencia = () => {
   const { darkAtivo } = useContext(UserContext)
 
-  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'REST API', 'GraphQL', 'jQuery', 'Git', 'VTEX IO']
+  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'REST API', 'GraphQL', 'jQuery', 'Git', 'VTEX IO', 'Google Tag Manager', 'Figma']
   const listSoftSkills = ['Detalhista', 'Trabalho em equipe', 'Resiliência', 'Comunicação', 'Criatividade']
   const listIdiomas = ['Inglês: intermediário', 'Espanhol: intermediário']
 
@@ -19,7 +19,7 @@ const Experiencia = () => {
       <div className='container-titulo'>
         <Titulo>Experiência</Titulo>
 
-        <a href="https://drive.google.com/file/d/17p71jkr-GNOY0ska2Du8QBeo90_KXLk_/view" target='_black'>
+        <a href="https://drive.google.com/file/d/1-s28dDBVgEFBMFJVVcC6H205XSQY7-xT/view?usp=sharing" target='_black'>
           <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo de Iasmin em PDF.' >
             <IconDownload color={darkAtivo ? '#FAEBEB' : '#210808'} />
             Currículo.PDF
@@ -31,7 +31,7 @@ const Experiencia = () => {
       <div className='content'>
         <p className='text-01'>Sou Iasmin, desenvolvedora Front-End, com experiência na implementação de e-commerces e na criação de apps customizados.<br /><br />
 
-          Tive a oportunidade de atuar em importantes desafios, como solucionar problemas na regionalização do Supermercado Savegnago/Paulistão e criar um app de página de departamento personalizado para a Olympikus. Além disso, sou detalhista, replicando layouts pixel por pixel, e com noções de UX/UI. Possuo especial atenção na responsividade das páginas, para que sejam bonitas e funcionais em qualquer display.</p>
+          Tive a oportunidade de atuar em importantes desafios, como solucionar problemas na regionalização do Supermercado Savegnago/Paulistão e criar um app de página de departamento personalizado para a Olympikus. Além disso, sou <b>detalhista</b>, replicando layouts pixel por pixel, e com noções de UX/UI. Possuo especial atenção na <b>responsividade</b> das páginas, para que sejam bonitas e funcionais em qualquer display.</p>
         <div className='box'>
           <p className='box-text-01'>Desenvolvedora Front-End - Avanti</p>
           <p className='box-text-02'>09/2021 - 07/2023</p>

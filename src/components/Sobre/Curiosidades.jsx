@@ -20,11 +20,11 @@ const Curiosidades = () => {
           <a href="https://iasminln.github.io/layout-antigo/" target='_blank' rel="noreferrer" aria-label='Link para visualizar o layout antigo.' title='Clique para acessar!'>
             <img className='img-layout' src={ImageLayout} alt="Imagem pequena do layout antigo" /></a>
 
-          <p style={{ fontStyle: 'italic', fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</p>
+          <em style={{fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</em>
         </div>
 
         <p className='text'>
-          Vale lembrar que esse layout antigo não foi feito para ser visualizado no celular, ou seja, ele vai quebrar. Para quem estranhar o tamanho tão pequeno, lembrem que os displays eram de 800 x 600 pixels. 😂 Se você mudar a configuração do seu monitor para 800 x 600, vai ver que fica, ó, <span style={{ fontStyle: 'italic' }}> chuchu beleza.</span> 👌
+          Vale lembrar que esse layout antigo não foi feito para ser visualizado no celular, ou seja, ele vai quebrar. Para quem estranhar o tamanho tão pequeno, lembrem que os displays eram de 800 x 600 pixels. 😂 Se você mudar a configuração do seu monitor para 800 x 600, vai ver que fica, ó, <em> chuchu beleza.</em> 👌
         </p>
 
         <p className='text'>Essa página também tem seu próprio repositório e você pode acessá-lo <a href="https://github.com/iasminln/layout-antigo" target="_blank" rel="noreferrer">AQUI</a>. Projeto feito com ReactJS e Sass.
