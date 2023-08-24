@@ -164,22 +164,12 @@
     &.ativo span {
       grid-column: 2/3;
       justify-self: flex-end;
-      -webkit-animation-name: toRight;
-      animation-name: toRight;
-      -webkit-animation-duration: 0.3s;
-      animation-duration: 0.3s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+      @include animation(toRight, 0.3s);
     }
 
     &.inativo span {
       grid-column: 1/2;
-      -webkit-animation-name: toLeft;
-      animation-name: toLeft;
-      -webkit-animation-duration: 0.3s;
-      animation-duration: 0.3s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+      @include animation(toLeft, 0.3s);
     }
 
     &:hover {

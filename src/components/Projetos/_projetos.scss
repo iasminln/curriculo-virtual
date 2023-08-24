@@ -116,14 +116,7 @@
   &:hover {
 
     img {
-      -webkit-backface-visibility: visible !important;
-      backface-visibility: visible !important;
-      -webkit-animation-name: flipOutY;
-      animation-name: flipOutY;
-      -webkit-animation-duration: .4s;
-      animation-duration: .4s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+      @include animation(flipOutY, 0.4s);
 
       @include mediaq(760) {
         animation-name: none;
@@ -131,21 +124,13 @@
     }
 
     .text-hover {
-      -webkit-backface-visibility: visible !important;
-      backface-visibility: visible !important;
-      -webkit-animation-name: flipOutYOposto;
-      animation-name: flipOutYOposto;
-      -webkit-animation-duration: .8s;
-      animation-duration: .8s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
+      @include animation(flipOutYOposto, 0.8s);
 
       @include mediaq(760) {
         animation-name: none;
       }
     }
   }
-
 }
 
 

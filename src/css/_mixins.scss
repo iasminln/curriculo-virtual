@@ -28,6 +28,15 @@
 
 @mixin dark() {
   body.darkmode & {
-    @content
+    @content;
   }
+}
+
+@mixin animation($name, $duration, $fill-mode: forwards) {
+  -webkit-animation-name: $name;
+  animation-name: $name;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-fill-mode: $fill-mode;
+  animation-fill-mode: $fill-mode;
 }
