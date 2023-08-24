@@ -101,7 +101,10 @@
 
           @include mediaq(900) {
             padding-left: size(30);
+            @include fontSize(16);
           }
+
+
 
           &::after {
             content: "";
