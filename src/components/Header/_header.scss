@@ -4,11 +4,11 @@
   top: 0;
   width: 100%;
   z-index: 3;
-  box-shadow: 0 1px 3px rgba($color: $color-one, $alpha: .1);
+  box-shadow: 0 1px 3px rgba($color: $color-one, $alpha: 0.1);
 
   @include dark() {
     background: $color-six;
-    box-shadow: 0 1px 3px rgba($color: $color-eight, $alpha: .5);
+    box-shadow: 0 1px 3px rgba($color: $color-eight, $alpha: 0.5);
   }
 
   .container {
@@ -20,11 +20,10 @@
       @include display-flex();
     }
 
-
     .btn-menu {
       background: none;
       border: none;
-      transition: .3s;
+      transition: 0.3s;
       cursor: pointer;
 
       &.active {
@@ -53,11 +52,11 @@
         position: absolute;
         top: 55px;
         right: 20px;
-        box-shadow: 0 1px 2px rgba($color: $color-one, $alpha: .3);
+        box-shadow: 0 1px 2px rgba($color: $color-one, $alpha: 0.3);
 
         @include dark() {
           background: $color-nine;
-          box-shadow: 0 1px 2px rgba($color: $color-six, $alpha: .8);
+          box-shadow: 0 1px 2px rgba($color: $color-six, $alpha: 0.8);
         }
 
         ul {
@@ -65,17 +64,16 @@
 
           .nav-item {
             padding: size(10) 0;
-            border-bottom: 1px solid rgba($color: $color-three, $alpha: .5);
+            border-bottom: 1px solid rgba($color: $color-three, $alpha: 0.5);
 
             @include dark() {
               background: $color-nine;
-              border-bottom: 1px solid rgba($color: $color-six, $alpha: .7);
+              border-bottom: 1px solid rgba($color: $color-six, $alpha: 0.7);
 
               &:last-child {
                 border: none;
               }
             }
-
 
             &:last-child {
               border: none;
@@ -85,7 +83,6 @@
               display: grid;
               grid-template-columns: 35px 1fr;
               align-items: center;
-
             }
           }
         }
@@ -94,7 +91,6 @@
       &.active {
         display: block;
       }
-
 
       ul {
         display: flex;
@@ -107,14 +103,13 @@
             padding-left: size(30);
           }
 
-
           &::after {
-            content: '';
+            content: "";
             background: $color-one;
             display: block;
             width: 0;
             height: 2px;
-            transition: .3s;
+            transition: 0.3s;
 
             @include mediaq(760) {
               display: none;
@@ -143,21 +138,83 @@
     cursor: pointer;
     background: none;
     border: 2px solid $color-three;
-    border-radius: 6px;
-    @include display-flex();
-    padding: size(8);
-    transition: .3s;
+    border-radius: 20px;
+    width: size(80);
+    height: size(40);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     @include dark() {
       border: 2px solid $color-eight;
     }
 
-    &:hover {
+    span {
+      content: "";
+      width: size(36);
+      height: size(36);
       background: $color-three;
-
+      border-radius: 100%;
+      @include display-flex();
 
       @include dark() {
         background: $color-eight;
+      }
+    }
+
+    &.ativo span {
+      grid-column: 2/3;
+      justify-self: flex-end;
+      -webkit-animation-name: toRight;
+      animation-name: toRight;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    &.inativo span {
+      grid-column: 1/2;
+      -webkit-animation-name: toLeft;
+      animation-name: toLeft;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+
+    &:hover {
+      background: rgba($color: $color-three, $alpha: 0.4);
+
+      @include dark() {
+        background: rgba($color: $color-eight, $alpha: 0.4);
+      }
+    }
+
+    @keyframes toRight {
+      0% {
+        -webkit-transform: translate3d(-40px, 0, 0);
+        transform: translate3d(-40px, 0, 0);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes toLeft {
+      0% {
+        -webkit-transform: translate3d(40px, 0, 0);
+        transform: translate3d(40px, 0, 0);
+        opacity: 0;
+      }
+
+      100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
       }
     }
   }
