@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import useMedia from '../../Hooks/useMedia';
 import { IconDireita } from './Icons'
 import { IconEsquerda } from './Icons';
+import ImageWebp from '../Util/ImageWebp';
 
-const ItemProjeto = ({ img, title, hover }) => {
+const ItemProjeto = ({ img, imgWebp, title, hover }) => {
   const isMobile = useMedia('(max-width: 47.5rem)')
   const [visibleImg, setVisibleImg] = useState(true)
 
@@ -11,7 +12,7 @@ const ItemProjeto = ({ img, title, hover }) => {
   return (
     <section className='item-projeto'>
       <div className='box'>
-        {isMobile ? visibleImg ? <img src={img} alt={title} /> : null : <img src={img} alt={title} />}
+        {isMobile ? visibleImg ? <ImageWebp src={img} srcWebp={imgWebp} alt={title} /> : null : <ImageWebp src={img} srcWebp={imgWebp} alt={title} />}
         {isMobile ? !visibleImg ? <div className='text-hover'>{hover}</div> : null : <div className='text-hover'>{hover}</div>}
 
       </div>

@@ -4,6 +4,9 @@ import ItemProjeto from './ItemProjeto';
 import ImageProjeto01 from '../../assets/projeto01.png'
 import ImageProjeto02 from '../../assets/projeto02.png'
 import ImageProjeto03 from '../../assets/projeto03.png'
+import ImageProjeto01Webp from '../../assets/projeto01.webp'
+import ImageProjeto02Webp from '../../assets/projeto02.webp'
+import ImageProjeto03Webp from '../../assets/projeto03.webp'
 import ButtonDefault from '../Util/Button';
 
 
@@ -17,6 +20,7 @@ const Projetos = () => {
       </p>
       <div className='content'>
         <ItemProjeto
+          imgWebp={ImageProjeto01Webp}
           img={ImageProjeto01}
           title='Rede social para pets'
           hover={
@@ -31,6 +35,7 @@ const Projetos = () => {
           }
         />
         <ItemProjeto
+          imgWebp={ImageProjeto02Webp}
           img={ImageProjeto02}
           title='Cronômetro e contagem regressiva'
           hover={
@@ -45,6 +50,7 @@ const Projetos = () => {
           }
         />
         <ItemProjeto
+          imgWebp={ImageProjeto03Webp}
           img={ImageProjeto03}
           title='Página dos gatos'
           hover={

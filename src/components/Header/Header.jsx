@@ -17,18 +17,18 @@ const Header = () => {
   const { darkAtivo } = useContext(UserContext)
 
 
-  const clickHtml = (e) => {
+  const clickOnHtml = ({ target }) => {
     const nav = document.querySelector('.allNav')
 
-    if (!nav.contains(e.target)) {
-      document.body.removeEventListener('click', clickHtml);
+    if (!nav.contains(target)) {
+      document.body.removeEventListener('click', clickOnHtml);
       setNavActive(false)
     }
   }
 
   const handleClick = () => {
     setNavActive(!navActive)
-    document.body.addEventListener('click', clickHtml)
+    document.body.addEventListener('click', clickOnHtml)
   }
 
 

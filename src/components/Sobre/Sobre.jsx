@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Titulo from '../Util/Titulo';
 import ImageIasmin from '../../assets/iasmin.jpg'
+import ImageIasminWebp from '../../assets/iasmin.webp'
 import useMedia from '../../Hooks/useMedia';
 import ButtonDefault from '../Util/Button';
 import Curiosidades from './Curiosidades';
+import ImageWebp from '../Util/ImageWebp';
 
 
 const Sobre = () => {
@@ -15,7 +17,7 @@ const Sobre = () => {
     <section className='sobre' id='sobre'>
       <div className='title-image'>
         <Titulo>Sobre</Titulo>
-        {isMobile && <img className='avatar-pequeno' src={ImageIasmin} alt="Avatar de Iasmin" />}
+        {isMobile && <ImageWebp className='avatar-pequeno' src={ImageIasmin} srcWebp={ImageIasminWebp} alt="Avatar de Iasmin" />}
       </div>
 
       <div className='content-main'>

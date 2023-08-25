@@ -4,6 +4,11 @@ import ImageLogoNomeDark from '../../assets/logo-nome-darkmode.png'
 import ImageLogo from '../../assets/logo-imagem.png'
 import ImageLogoDark from '../../assets/logo-imagem-darkmode.png'
 import { UserContext } from '../../userContext';
+import ImageLogoNomeWebp from '../../assets/logo-nome.webp'
+import ImageLogoNomeDarkWebp from '../../assets/logo-nome-darkmode.webp'
+import ImageLogoWebp from '../../assets/logo-imagem.webp'
+import ImageLogoDarkWebp from '../../assets/logo-imagem-darkmode.webp'
+import ImageWebp from '../Util/ImageWebp';
 
 
 const Apresentacao = () => {
@@ -14,10 +19,18 @@ const Apresentacao = () => {
     <section className='apresentacao'>
       <div className='container'>
         <div className='logo-name'>
-          <img src={darkAtivo ? ImageLogoNomeDark : ImageLogoNome} alt="Olá, mundo! Eu me chamo Iasmin e sou Desenvolvedora Front-End." />
+          <ImageWebp
+            src={darkAtivo ? ImageLogoNomeDark : ImageLogoNome}
+            srcWebp={darkAtivo ? ImageLogoNomeDarkWebp : ImageLogoNomeWebp}
+            alt='Olá, mundo! Eu me chamo Iasmin e sou Desenvolvedora Front-End.'
+          />
         </div>
         <div className='logo-imagem'>
-          <img src={darkAtivo ? ImageLogoDark : ImageLogo} alt="Imagem de garota ao lado de dispositivos desktop, tablet e mobile." />
+          <ImageWebp
+            src={darkAtivo ? ImageLogoDarkWebp : ImageLogoWebp}
+            srcWebp={darkAtivo ? ImageLogoDark : ImageLogo}
+            alt='Imagem de garota ao lado de dispositivos desktop, tablet e mobile.'
+          />
         </div>
       </div>
     </section>
