@@ -23,6 +23,8 @@ const Apresentacao = () => {
             src={darkAtivo ? ImageLogoNomeDark : ImageLogoNome}
             srcWebp={darkAtivo ? ImageLogoNomeDarkWebp : ImageLogoNomeWebp}
             alt='Olá, mundo! Eu me chamo Iasmin e sou Desenvolvedora Front-End.'
+            width='auto'
+            height='auto'
           />
         </div>
         <div className='logo-imagem'>
@@ -30,6 +32,8 @@ const Apresentacao = () => {
             src={darkAtivo ? ImageLogoDarkWebp : ImageLogoWebp}
             srcWebp={darkAtivo ? ImageLogoDark : ImageLogo}
             alt='Imagem de garota ao lado de dispositivos desktop, tablet e mobile.'
+            width='auto'
+            height='auto'
           />
         </div>
       </div>

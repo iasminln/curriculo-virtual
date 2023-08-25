@@ -22,6 +22,8 @@ const Projetos = () => {
         <ItemProjeto
           imgWebp={ImageProjeto01Webp}
           img={ImageProjeto01}
+          width='310px'
+          height='250px'
           title='Rede social para pets'
           hover={
             <>
@@ -37,6 +39,8 @@ const Projetos = () => {
         <ItemProjeto
           imgWebp={ImageProjeto02Webp}
           img={ImageProjeto02}
+          width='310px'
+          height='250px'
           title='Cronômetro e contagem regressiva'
           hover={
             <>
@@ -52,6 +56,8 @@ const Projetos = () => {
         <ItemProjeto
           imgWebp={ImageProjeto03Webp}
           img={ImageProjeto03}
+          width='310px'
+          height='250px'
           title='Página dos gatos'
           hover={
             <>

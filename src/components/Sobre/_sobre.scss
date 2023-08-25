@@ -7,7 +7,8 @@
 
     .avatar-pequeno {
       border-radius: 100%;
-      width: 70px;
+      width: size(70);
+      height: size(70);
       margin: 0 0 size(20) size(20);
     }
   }
@@ -119,6 +120,11 @@
         border-radius: 6px;
         margin-bottom: size(8);
         transition: .3s;
+
+        @include mediaq(400){
+          width: auto;
+          height: auto;
+        }
 
         @include dark() {
           background: rgba($color: $color-two, $alpha: .1);

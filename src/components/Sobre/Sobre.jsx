@@ -17,7 +17,7 @@ const Sobre = () => {
     <section className='sobre' id='sobre'>
       <div className='title-image'>
         <Titulo>Sobre</Titulo>
-        {isMobile && <ImageWebp className='avatar-pequeno' src={ImageIasmin} srcWebp={ImageIasminWebp} alt="Avatar de Iasmin" />}
+        {isMobile && <ImageWebp className='avatar-pequeno' src={ImageIasmin} srcWebp={ImageIasminWebp} width='340px' height='340px' alt="Avatar de Iasmin" />}
       </div>
 
       <div className='content-main'>

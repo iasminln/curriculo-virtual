@@ -20,7 +20,7 @@ const Curiosidades = () => {
 
         <div className='container-layout'>
           <a href="https://iasminln.github.io/layout-antigo/" target='_blank' rel="noreferrer" aria-label='Link para visualizar o layout antigo.' title='Clique para acessar!'>
-            <ImageWebp className='img-layout' src={ImageLayout} srcWebp={ImageLayoutWebp} alt="Imagem pequena do layout antigo" />
+            <ImageWebp className='img-layout' src={ImageLayout} srcWebp={ImageLayoutWebp} width='320px' height='320px' alt="Imagem pequena do layout antigo" />
           </a>
 
           <em style={{ fontSize: '13px', textAlign: 'center' }}>Perdoe-me, Deus do Design, eu era só uma criança...</em>
