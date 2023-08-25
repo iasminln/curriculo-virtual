@@ -14,9 +14,9 @@ const Sobre = () => {
 
 
   return (
-    <section className='sobre' id='sobre'>
+    <section className='sobre' id='sobre' aria-labelledby='title-sobre'>
       <div className='title-image'>
-        <Titulo>Sobre</Titulo>
+        <Titulo id='title-sobre'>Sobre</Titulo>
         {isMobile && <ImageWebp className='avatar-pequeno' src={ImageIasmin} srcWebp={ImageIasminWebp} width='340px' height='340px' alt="Avatar de Iasmin" />}
       </div>
 

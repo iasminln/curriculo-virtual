@@ -7,9 +7,9 @@ const Creditos = () => {
 
 
   return (
-    <section className='creditos' id='creditos'>
+    <footer className='creditos' id='creditos' aria-labelledby='title-creditos'>
       <div className='container'>
-        <div className='content-titulo'> <Titulo>Créditos</Titulo></div>
+        <div className='content-titulo'> <Titulo id='title-creditos'>Créditos</Titulo></div>
 
         <div className='conteudo'>
           <p className='text'>Layout totalmente desenvolvido por Iasmin Lisboa Nogueira.</p>
@@ -22,7 +22,7 @@ const Creditos = () => {
 
       </div>
 
-    </section>
+    </footer>
   )
 }
 

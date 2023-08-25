@@ -15,9 +15,9 @@ const Experiencia = () => {
 
 
   return (
-    <section className='experiencia' id='experiencia'>
+    <section className='experiencia' id='experiencia' aria-labelledby='title-experiencia'>
       <div className='container-titulo'>
-        <Titulo>Experiência</Titulo>
+        <Titulo id='title-experiencia'>Experiência</Titulo>
 
         <a href="https://drive.google.com/file/d/1-s28dDBVgEFBMFJVVcC6H205XSQY7-xT/view?usp=sharing" target='_black'>
           <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo de Iasmin em PDF.' >

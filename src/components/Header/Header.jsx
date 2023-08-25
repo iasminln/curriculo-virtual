@@ -16,6 +16,8 @@ const Header = () => {
   const isMobile = useMedia('(max-width: 47.5rem)')
   const { darkAtivo } = useContext(UserContext)
 
+  const colorNavIcons = darkAtivo ? '#FAEBEB' : '#210808'
+
 
   const clickOnHtml = ({ target }) => {
     const nav = document.querySelector('.allNav')
@@ -43,7 +45,7 @@ const Header = () => {
         <div className='allNav'>
           {isMobile &&
             <button aria-label='Menu' className={`btn-menu ${navActive && 'active'}`} onClick={handleClick}>
-              <IconMenu color={darkAtivo ? '#FAEBEB' : '#210808'} />
+              <IconMenu color={colorNavIcons} />
             </button>
           }
 
@@ -51,25 +53,27 @@ const Header = () => {
             <ul>
               <li className='nav-item'>
                 <a href="#experiencia" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconWork color={darkAtivo ? '#FAEBEB' : '#210808'} />} Experiência</a>
+                  {isMobile && <IconWork color={colorNavIcons} />} Experiência</a>
               </li>
               <li className='nav-item'>
                 <a href="#formacao" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconStudy color={darkAtivo ? '#FAEBEB' : '#210808'} />}Formação</a></li>
+                  {isMobile && <IconStudy color={colorNavIcons} />}Formação</a>
+              </li>
               <li className='nav-item'>
                 <a href="#projetos" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconProjetos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Projetos</a>
+                  {isMobile && <IconProjetos color={colorNavIcons} />}Projetos</a>
               </li>
               <li className='nav-item'>
                 <a href="#sobre" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconSobre color={darkAtivo ? '#FAEBEB' : '#210808'} />}Sobre</a></li>
+                  {isMobile && <IconSobre color={colorNavIcons} />}Sobre</a>
+              </li>
               <li className='nav-item'>
                 <a href="#contato" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconContato color={darkAtivo ? '#FAEBEB' : '#210808'} />}Contato</a>
+                  {isMobile && <IconContato color={colorNavIcons} />}Contato</a>
               </li>
               <li className='nav-item'>
                 <a href="#creditos" onClick={() => setNavActive(false)}>
-                  {isMobile && <IconCreditos color={darkAtivo ? '#FAEBEB' : '#210808'} />}Créditos</a>
+                  {isMobile && <IconCreditos color={colorNavIcons} />}Créditos</a>
               </li>
             </ul>
           </nav>

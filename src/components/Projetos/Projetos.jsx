@@ -13,9 +13,9 @@ import ButtonDefault from '../Util/Button';
 const Projetos = () => {
 
   return (
-    <section className='projetos' id='projetos'>
+    <section className='projetos' id='projetos' aria-labelledby='title-projetos'>
 
-      <Titulo>Projetos</Titulo>
+      <Titulo id='title-projetos'>Projetos</Titulo>
       <p className='text-inicial'>Essa página-currículo também é um projeto, feito com ReactJS, Vite e Sass. Acesse o repositório <a href="https://github.com/iasminln/curriculo-virtual" target="_blank" rel="noreferrer">AQUI</a>.
       </p>
       <div className='content'>

@@ -16,7 +16,7 @@ const Apresentacao = () => {
 
 
   return (
-    <section className='apresentacao'>
+    <section className='apresentacao' aria-label='Apresentação.'>
       <div className='container'>
         <div className='logo-name'>
           <ImageWebp

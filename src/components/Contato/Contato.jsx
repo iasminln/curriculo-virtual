@@ -7,9 +7,9 @@ const Contato = () => {
 
 
   return (
-    <section className='contato' id='contato'>
+    <section className='contato' id='contato' aria-labelledby='title-contato'>
       <div className='container'>
-        <div className='content-titulo'> <Titulo>Contato</Titulo></div>
+        <div className='content-titulo'> <Titulo id='title-contato'>Contato</Titulo></div>
 
         <div className='conteudo'>
           <p className='text'>Vamos conversar? Entre em contato! 😊</p>
@@ -20,9 +20,7 @@ const Contato = () => {
             <a href="https://www.instagram.com/iasminln/" target='_blank' rel="noreferrer" aria-label='Link de contato para instagram.' ><IconInstagram/></a>
           </div>
         </div>
-
       </div>
-
     </section>
   )
 }
