@@ -8,7 +8,6 @@ const ItemProjeto = ({ img, imgWebp, title, hover, height, width }) => {
   const isMobile = useMedia('(max-width: 47.5rem)')
   const [visibleImg, setVisibleImg] = useState(true)
 
-  console.log("teste", width, height)
 
   return (
     <section className='item-projeto'>
