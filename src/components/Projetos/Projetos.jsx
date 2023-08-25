@@ -25,6 +25,7 @@ const Projetos = () => {
           width='310px'
           height='250px'
           title='Rede social para pets'
+          href='https://iasminln.github.io/rede-social-pets/'
           hover={
             <>
               <p className='text-links'>Projeto feito em ReactJS e Sass, utilizando-se Vite. (em andamento)</p>
@@ -42,6 +43,7 @@ const Projetos = () => {
           width='310px'
           height='250px'
           title='Cronômetro e contagem regressiva'
+          href='https://iasminln.github.io/estudo-cronometro/'
           hover={
             <>
               <p className='text-links'>Projeto feito com JavaScript puro e Sass.</p>
@@ -59,6 +61,7 @@ const Projetos = () => {
           width='310px'
           height='250px'
           title='Página dos gatos'
+          href='https://iasminln.github.io/pagina-gatos-js/'
           hover={
             <>
               <p className='text-links'>Projeto feito com JavaScript puro para treino de funções. Primeiro projeto de estudo com Sass e display grid.</p>

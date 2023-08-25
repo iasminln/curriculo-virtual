@@ -67,6 +67,10 @@
       @include mediaq(900, min) {
         &:hover {
           background: $color-three;
+
+          @include dark() {
+            background: $color-ten;
+          }
         }
 
         &:disabled {
@@ -110,6 +114,11 @@
   img {
     border: 10px solid rgba($color: $color-two, $alpha: .3);
     border-radius: 6px;
+    transition: .3s;
+
+    &:hover {
+      border: 10px solid rgba($color: $color-two, $alpha: .6);
+    }
 
   }
 

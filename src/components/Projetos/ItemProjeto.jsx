@@ -4,7 +4,7 @@ import { IconEsquerda } from "./Icons";
 import ImageWebp from "../Util/ImageWebp";
 import { UserContext } from "../../userContext";
 
-const ItemProjeto = ({ img, imgWebp, title, hover, height, width }) => {
+const ItemProjeto = ({ img, imgWebp, title, hover, height, width, href }) => {
   const [visibleImg, setVisibleImg] = useState(true);
   const { darkAtivo } = useContext(UserContext)
   const colorNavIcons = darkAtivo ? '#FAEBEB' : '#210808'
@@ -13,14 +13,16 @@ const ItemProjeto = ({ img, imgWebp, title, hover, height, width }) => {
     <div className="item-projeto" aria-label={`Projeto: ${title}`}>
       <div className="box">
         {visibleImg ? (
-          <ImageWebp
-            src={img}
-            srcWebp={imgWebp}
-            alt={title}
-            width={width}
-            height={height}
-            loading="lazy"
-          />
+          <a href={href} target="_blank" rel="noreferrer">
+            <ImageWebp
+              src={img}
+              srcWebp={imgWebp}
+              alt={title}
+              width={width}
+              height={height}
+              loading="lazy"
+            />
+          </a>
         ) : null}
         {!visibleImg ? <div className="text-hover">{hover}</div> : null}
       </div>
