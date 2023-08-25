@@ -1,6 +1,7 @@
 export const IconDireita = ({ color }) => {
   return (
     <svg
+      alt=""
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
       height="1.25em"
@@ -15,6 +16,7 @@ export const IconDireita = ({ color }) => {
 export const IconEsquerda = ({ color }) => {
   return (
     <svg
+      alt=""
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
       height="1.25em"

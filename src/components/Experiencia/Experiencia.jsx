@@ -20,7 +20,7 @@ const Experiencia = () => {
         <Titulo id='title-experiencia'>Experiência</Titulo>
 
         <a href="https://drive.google.com/file/d/1-s28dDBVgEFBMFJVVcC6H205XSQY7-xT/view?usp=sharing" target='_black'>
-          <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo de Iasmin em PDF.' >
+          <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo.' >
             <IconDownload color={darkAtivo ? '#FAEBEB' : '#210808'} />
             Currículo.PDF
           </ButtonDefault>

@@ -5,7 +5,7 @@ import ImageSetas from '../../assets/setas.png'
 const TituloSecundario = ({ children }) => {
   return (
     <h2 className='titulo-secundario'>
-      <img src={ImageSetas} />
+      <img alt="" src={ImageSetas} />
       <span className='titulo-main'>{children}<span className='dot'>.</span></span>
     </h2>
   )
