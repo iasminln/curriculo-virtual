@@ -16,7 +16,7 @@ const Projetos = () => {
     <section className='projetos' id='projetos' aria-labelledby='title-projetos'>
 
       <Titulo id='title-projetos'>Projetos</Titulo>
-      <p className='text-inicial'>Essa página-currículo também é um projeto, feito com ReactJS, Vite e Sass. Acesse o repositório <a href="https://github.com/iasminln/curriculo-virtual" target="_blank" rel="noreferrer">AQUI</a>. Clique nas setas abaixo para navegação.
+      <p className='text-inicial'>Essa página-currículo também é um projeto, feito com ReactJS, Vite e Sass e layout feito no Figma. <a href="https://github.com/iasminln/curriculo-virtual" target="_blank" rel="noreferrer">Acesse o repositório AQUI</a>. Clique nas setas abaixo para navegação.
       </p>
       <div className='content'>
         <ItemProjeto
