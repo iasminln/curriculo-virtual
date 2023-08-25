@@ -28,6 +28,7 @@ const Sobre = () => {
             width='340px'
             height='340px'
             alt="Avatar de Iasmin"
+            loading="lazy"
           />}
       </div>
 

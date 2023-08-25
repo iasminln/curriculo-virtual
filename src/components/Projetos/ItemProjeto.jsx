@@ -19,6 +19,7 @@ const ItemProjeto = ({ img, imgWebp, title, hover, height, width }) => {
             alt={title}
             width={width}
             height={height}
+            loading="lazy"
           />
         ) : null}
         {!visibleImg ? <div className="text-hover">{hover}</div> : null}
