@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageLayout from '../../assets/pequeno-layout.png'
+import ImageLayout from '../../assets/pequeno-layout.jpg'
 import ImageLayoutWebp from '../../assets/pequeno-layout.webp'
 import TituloSecundario from '../Util/TituloSecundario';
 import ImageWebp from '../Util/ImageWebp';

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Titulo from '../Util/Titulo';
 import ImageIasmin from '../../assets/iasmin.jpg'
 import ImageIasminWebp from '../../assets/iasmin.webp'
+import ImageIasminWebpMobile from '../../assets/iasmin-mobile.webp'
 import useMedia from '../../Hooks/useMedia';
 import ButtonDefault from '../Util/Button';
 import Curiosidades from './Curiosidades';
@@ -17,7 +18,17 @@ const Sobre = () => {
     <section className='sobre' id='sobre' aria-labelledby='title-sobre'>
       <div className='title-image'>
         <Titulo id='title-sobre'>Sobre</Titulo>
-        {isMobile && <ImageWebp className='avatar-pequeno' src={ImageIasmin} srcWebp={ImageIasminWebp} width='340px' height='340px' alt="Avatar de Iasmin" />}
+        {isMobile &&
+          <ImageWebp
+            className='avatar-pequeno'
+            src={ImageIasmin}
+            srcWebp={ImageIasminWebp}
+            srcWebpMobile={ImageIasminWebpMobile}
+            media='760px'
+            width='340px'
+            height='340px'
+            alt="Avatar de Iasmin"
+          />}
       </div>
 
       <div className='content-main'>
