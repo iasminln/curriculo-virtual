@@ -12,7 +12,7 @@ html {
   scroll-margin-top: size(70);
 }
 
-#formacao:target, 
+#formacao:target,
 #contato:target {
   scroll-margin-top: size(120);
 }
@@ -42,6 +42,8 @@ h4 {
 a {
   text-decoration: none;
   color: $color-type;
+  height: fit-content;
+  cursor: pointer;
 
   @include dark() {
     color: $color-four;
@@ -55,9 +57,14 @@ li {
   padding: 0;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
 }
 
 button,

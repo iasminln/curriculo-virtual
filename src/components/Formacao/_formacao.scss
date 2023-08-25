@@ -30,7 +30,7 @@
     .content-text {
       @include mediaq(1000) {
         position: absolute;
-        top: size(-42);
+        top: size(-35);
       }
     }
 

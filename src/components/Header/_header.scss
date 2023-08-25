@@ -24,7 +24,6 @@
       background: none;
       border: none;
       transition: 0.3s;
-      cursor: pointer;
 
       &.active {
         transform: rotate(90deg);
@@ -138,7 +137,6 @@
   }
 
   .btn-dakr-mode {
-    cursor: pointer;
     background: none;
     border: 2px solid $color-three;
     border-radius: 20px;
