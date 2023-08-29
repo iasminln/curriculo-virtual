@@ -78,7 +78,7 @@
 }
 
 .button-default {
-  display: inline-block;
+  @include display-flex();
   padding: size(8) size(14);
   min-width: 120px;
   border-radius: 6px;

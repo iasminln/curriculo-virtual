@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Titulo from '../Util/Titulo';
 import TituloSecundario from '../Util/TituloSecundario';
-import ButtonDefault from '../Util/Button';
+import Anchor from '../Util/Anchor'
 import { IconDownload } from './Icons';
 import { UserContext } from '../../userContext';
 
@@ -19,12 +19,10 @@ const Experiencia = () => {
       <div className='container-titulo'>
         <Titulo id='title-experiencia'>Experiência</Titulo>
 
-        <a href="https://drive.google.com/file/d/1-s28dDBVgEFBMFJVVcC6H205XSQY7-xT/view?usp=sharing" target='_black'>
-          <ButtonDefault style={{ display: 'flex', alignItems: 'center' }} title='Baixar currículo em PDF.' aria-label='Baixar currículo.' >
-            <IconDownload color={darkAtivo ? '#FAEBEB' : '#210808'} />
-            Currículo.PDF
-          </ButtonDefault>
-        </a>
+        <Anchor href="https://drive.google.com/file/d/1-s28dDBVgEFBMFJVVcC6H205XSQY7-xT/view?usp=sharing" title='Baixar currículo em PDF.' aria-label='Baixar currículo.'>
+          <IconDownload color={darkAtivo ? '#FAEBEB' : '#210808'} />
+          Currículo.PDF
+        </Anchor>
 
       </div>
 
