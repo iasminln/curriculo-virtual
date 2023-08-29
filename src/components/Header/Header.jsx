@@ -67,7 +67,7 @@ const Header = () => {
 
 
   return (
-    <header className='header'>
+    <header className='header' aria-label='Header'>
       <div className='container'>
         <div className='logo-darkmode'>
           <a href="/curriculo-virtual/">
