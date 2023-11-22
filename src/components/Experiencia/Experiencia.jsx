@@ -9,7 +9,7 @@ import { UserContext } from '../../userContext';
 const Experiencia = () => {
   const { darkAtivo } = useContext(UserContext)
 
-  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'REST API', 'GraphQL', 'jQuery', 'Git', 'VTEX IO', 'Google Tag Manager', 'Figma']
+  const listHardSkills = ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'ReactJS', 'Shopify', 'Liquid', 'VTEX IO', 'Google Tag Manager', 'REST API', 'GraphQL', 'jQuery', 'Git', 'Figma']
   const listSoftSkills = ['Detalhista', 'Trabalho em equipe', 'Resiliência', 'Comunicação', 'Criatividade']
   const listIdiomas = ['Inglês: intermediário', 'Espanhol: intermediário']
 
@@ -29,11 +29,19 @@ const Experiencia = () => {
       <div className='content'>
         <p className='text-01'>Sou Iasmin, desenvolvedora Front-End, com experiência na implementação de e-commerces e na criação de apps customizados.<br /><br />
 
-          Tive a oportunidade de atuar em importantes desafios, como solucionar problemas na regionalização do Supermercado Savegnago/Paulistão e criar um app de página de departamento personalizado para a Olympikus. Além disso, sou <b>detalhista</b>, replicando layouts pixel por pixel, e com noções de UX/UI. Possuo especial atenção na <b>responsividade</b> das páginas, para que sejam bonitas e funcionais em qualquer display.</p>
+          Tive a oportunidade de atuar em importantes desafios, como solucionar problemas na regionalização do Supermercado Savegnago/Paulistão e criar um app de página de departamento personalizado para a Olympikus. <br /><br />
+
+          Além disso, sou <strong>detalhista</strong>, replicando layouts pixel por pixel, e com noções de UX/UI. Possuo especial atenção na <strong>responsividade</strong> das páginas, para que sejam bonitas e funcionais em qualquer display.
+        </p>
         <div className='box'>
-          <p className='box-text-01'>Desenvolvedora Front-End - Avanti</p>
+          <p className='box-text-01'>CheckStore</p>
+          <p className='box-text-02'>09/2023 - Atualmente</p>
+          <p className='box-text-03'>Estou envolvida no suporte e evolução de E-commerces na Shopify, como por exemplo: Korui, Waaw, Kingston, Victoria Sayeg, Hang Loose, Rusty, dentre outros.</p>
+        </div>
+        <div className='box'>
+          <p className='box-text-01'>Avanti</p>
           <p className='box-text-02'>09/2021 - 07/2023</p>
-          <p className='box-text-03'>Estive envolvida na implementação e manutenção de E-commerces em VTEX IO, como por exemplo: Olympikus, Supermercados Savegnago e Paulistão, Smiles, WebJóias, Farmácias São João, dentre outros.</p>
+          <p className='box-text-03'>Estive envolvida na implementação e manutenção de E-commerces em VTEX IO, como por exemplo: Olympikus, Smiles, Supermercados Savegnago e Paulistão, WebJóias, Farmácias São João, dentre outros.</p>
         </div>
       </div>
 
