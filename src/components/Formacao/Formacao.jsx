@@ -31,4 +31,4 @@ const Formacao = () => {
   )
 }
 
-export default Formacao; 
+export default Formacao;
